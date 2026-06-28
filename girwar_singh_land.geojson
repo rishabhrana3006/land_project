@@ -1,0 +1,4536 @@
+{
+  "type": "FeatureCollection",
+  "name": "Rana family land holdings (Gharaunda, Karnal)",
+  "crs": {
+    "type": "name",
+    "properties": {
+      "name": "urn:ogc:def:crs:OGC:1.3:CRS84"
+    }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "village": "Raseen",
+        "khewat": "Khewat 11 (Sole Ownership - 15.8 Acres)",
+        "ownership_type": "Sole",
+        "murabba": "16",
+        "requested_kila": "18/4",
+        "khas_no": "18/4",
+        "kanal": 1,
+        "marla": 18,
+        "area_sqm": 948.822732925,
+        "objectid": 180667
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.94679227400242,
+              29.575936870341103
+            ],
+            [
+              76.94610028058622,
+              29.57594517012358
+            ],
+            [
+              76.94610181858059,
+              29.576045344260596
+            ],
+            [
+              76.94610212491853,
+              29.576065237994385
+            ],
+            [
+              76.94679436503667,
+              29.576072061681757
+            ],
+            [
+              76.94679227400242,
+              29.575936870341103
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "village": "Raseen",
+        "khewat": "Khewat 11 (Sole Ownership - 15.8 Acres)",
+        "ownership_type": "Sole",
+        "murabba": "16",
+        "requested_kila": "19/4",
+        "khas_no": "19/4",
+        "kanal": 0,
+        "marla": 18,
+        "area_sqm": 443.875819615,
+        "objectid": 179939
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.94610028058622,
+              29.57594517012358
+            ],
+            [
+              76.94573698300249,
+              29.57594952578676
+            ],
+            [
+              76.94577703926491,
+              29.576069087706813
+            ],
+            [
+              76.94610212491853,
+              29.576065237994385
+            ],
+            [
+              76.94610181858059,
+              29.576045344260596
+            ],
+            [
+              76.94610028058622,
+              29.57594517012358
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "village": "Raseen",
+        "khewat": "Khewat 11 (Sole Ownership - 15.8 Acres)",
+        "ownership_type": "Sole",
+        "murabba": "16",
+        "requested_kila": "22/2",
+        "khas_no": "22/2",
+        "kanal": 4,
+        "marla": 4,
+        "area_sqm": 2135.293615035,
+        "objectid": 179855
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.94609701943061,
+              29.575733824325454
+            ],
+            [
+              76.94588942547345,
+              29.575736318079876
+            ],
+            [
+              76.94588733105977,
+              29.57560045545656
+            ],
+            [
+              76.94604302730639,
+              29.575598582687498
+            ],
+            [
+              76.94604023153616,
+              29.575417457239478
+            ],
+            [
+              76.945560662572,
+              29.57542322810139
+            ],
+            [
+              76.94573698300249,
+              29.57594952578676
+            ],
+            [
+              76.94610028058622,
+              29.57594517012358
+            ],
+            [
+              76.94609701943061,
+              29.575733824325454
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "village": "Raseen",
+        "khewat": "Khewat 11 (Sole Ownership - 15.8 Acres)",
+        "ownership_type": "Sole",
+        "murabba": "16",
+        "requested_kila": "23/2",
+        "khas_no": "23/2",
+        "kanal": 7,
+        "marla": 15,
+        "area_sqm": 3927.803142375,
+        "objectid": 179856
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.94678410668386,
+              29.57540850259021
+            ],
+            [
+              76.94609212983903,
+              29.575416832652273
+            ],
+            [
+              76.9460949236554,
+              29.575597959027228
+            ],
+            [
+              76.94609701943061,
+              29.575733824325454
+            ],
+            [
+              76.94610028058622,
+              29.57594517012358
+            ],
+            [
+              76.94679227400242,
+              29.575936870341103
+            ],
+            [
+              76.94678410668386,
+              29.57540850259021
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "village": "Raseen",
+        "khewat": "Khewat 11 (Sole Ownership - 15.8 Acres)",
+        "ownership_type": "Sole",
+        "murabba": "16",
+        "requested_kila": "24/1/2",
+        "khas_no": "24/1/2",
+        "kanal": 3,
+        "marla": 11,
+        "area_sqm": 1794.95448196,
+        "objectid": 179857
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.94716490464756,
+              29.575418997399677
+            ],
+            [
+              76.94681893839554,
+              29.575423158588745
+            ],
+            [
+              76.9468264031715,
+              29.575906039777372
+            ],
+            [
+              76.94717241333053,
+              29.575901929302116
+            ],
+            [
+              76.94716490464756,
+              29.575418997399677
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "village": "Raseen",
+        "khewat": "Khewat 11 (Sole Ownership - 15.8 Acres)",
+        "ownership_type": "Sole",
+        "murabba": "16",
+        "requested_kila": "25/2/2",
+        "khas_no": "25/2/2",
+        "kanal": 2,
+        "marla": 10,
+        "area_sqm": 1256.838232715,
+        "objectid": 180564
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.94792609416746,
+              29.575409842823262
+            ],
+            [
+              76.94793360753452,
+              29.57589288367406
+            ],
+            [
+              76.94817579539317,
+              29.575890005329217
+            ],
+            [
+              76.94816828023308,
+              29.575406931170885
+            ],
+            [
+              76.94792609416746,
+              29.575409842823262
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "village": "Raseen",
+        "khewat": "Khewat 11 (Sole Ownership - 15.8 Acres)",
+        "ownership_type": "Sole",
+        "murabba": "16",
+        "requested_kila": "26",
+        "khas_no": "26",
+        "kanal": 0,
+        "marla": 14,
+        "area_sqm": 353.54094042,
+        "objectid": 180030
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.94615654305274,
+              29.577348687584273
+            ],
+            [
+              76.94612193898028,
+              29.57734910018169
+            ],
+            [
+              76.94612403493362,
+              29.577484963638412
+            ],
+            [
+              76.94636625668015,
+              29.577482083472425
+            ],
+            [
+              76.94636415828703,
+              29.577346217358578
+            ],
+            [
+              76.94615654305274,
+              29.577348687584273
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "village": "Raseen",
+        "khewat": "Khewat 11 (Sole Ownership - 15.8 Acres)",
+        "ownership_type": "Sole",
+        "murabba": "17",
+        "requested_kila": "10/1",
+        "khas_no": "10/1",
+        "kanal": 3,
+        "marla": 9,
+        "area_sqm": 1752.06375605,
+        "objectid": 180017
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.94867771134166,
+              29.57700156103808
+            ],
+            [
+              76.94838349166248,
+              29.57700505884812
+            ],
+            [
+              76.94819882393624,
+              29.577369201357815
+            ],
+            [
+              76.94820164837004,
+              29.57755085218246
+            ],
+            [
+              76.94844392416586,
+              29.57754799449118
+            ],
+            [
+              76.94867771134166,
+              29.57700156103808
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "village": "Raseen",
+        "khewat": "Khewat 11 (Sole Ownership - 15.8 Acres)",
+        "ownership_type": "Sole",
+        "murabba": "17",
+        "requested_kila": "11/3",
+        "khas_no": "11/3",
+        "kanal": 3,
+        "marla": 9,
+        "area_sqm": 1742.09733344,
+        "objectid": 179918
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.94887136044899,
+              29.57645529424854
+            ],
+            [
+              76.94870084154883,
+              29.576457402413958
+            ],
+            [
+              76.94856912083982,
+              29.57645903106655
+            ],
+            [
+              76.94838349166248,
+              29.57700505884812
+            ],
+            [
+              76.94867771134166,
+              29.57700156103808
+            ],
+            [
+              76.94887136044899,
+              29.57645529424854
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "village": "Raseen",
+        "khewat": "Khewat 11 (Sole Ownership - 15.8 Acres)",
+        "ownership_type": "Sole",
+        "murabba": "17",
+        "requested_kila": "20/1",
+        "khas_no": "20/1",
+        "kanal": 3,
+        "marla": 1,
+        "area_sqm": 1550.300314575,
+        "objectid": 180569
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.94904129768314,
+              29.575909770539024
+            ],
+            [
+              76.94886828992661,
+              29.575911867614874
+            ],
+            [
+              76.94856912083982,
+              29.57645903106655
+            ],
+            [
+              76.94870084154883,
+              29.576457402413958
+            ],
+            [
+              76.94887136044899,
+              29.57645529424854
+            ],
+            [
+              76.94899872428623,
+              29.576225258986604
+            ],
+            [
+              76.94904129768314,
+              29.575909770539024
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "village": "Raseen",
+        "khewat": "Khewat 11 (Sole Ownership - 15.8 Acres)",
+        "ownership_type": "Sole",
+        "murabba": "17",
+        "requested_kila": "20/4",
+        "khas_no": "20/4",
+        "kanal": 0,
+        "marla": 18,
+        "area_sqm": 447.192581025,
+        "objectid": 180723
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.94872989689368,
+              29.575913543837054
+            ],
+            [
+              76.94851106040707,
+              29.575916194116843
+            ],
+            [
+              76.94817626583038,
+              29.575920249049542
+            ],
+            [
+              76.94817744345752,
+              29.57599585742499
+            ],
+            [
+              76.94868467815738,
+              29.575995220627146
+            ],
+            [
+              76.94872989689368,
+              29.575913543837054
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "village": "Raseen",
+        "khewat": "Khewat 11 (Sole Ownership - 15.8 Acres)",
+        "ownership_type": "Sole",
+        "murabba": "17",
+        "requested_kila": "21/1/2",
+        "khas_no": "21/1/2",
+        "kanal": 6,
+        "marla": 10,
+        "area_sqm": 3287.822441925,
+        "objectid": 179851
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.94880607725023,
+              29.575398320126176
+            ],
+            [
+              76.94816828023308,
+              29.575406931170885
+            ],
+            [
+              76.94817579539317,
+              29.575890005329217
+            ],
+            [
+              76.94817626583038,
+              29.575920249049542
+            ],
+            [
+              76.94851106040707,
+              29.575916194116843
+            ],
+            [
+              76.94872989689368,
+              29.575913543837054
+            ],
+            [
+              76.94880607725023,
+              29.575398320126176
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "village": "Raseen",
+        "khewat": "Khewat 11 (Sole Ownership - 15.8 Acres)",
+        "ownership_type": "Sole",
+        "murabba": "17",
+        "requested_kila": "22/2/2",
+        "khas_no": "22/2/2",
+        "kanal": 2,
+        "marla": 6,
+        "area_sqm": 1162.903983385,
+        "objectid": 179852
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.94912638173864,
+              29.575654194313312
+            ],
+            [
+              76.94920856131459,
+              29.57540734032493
+            ],
+            [
+              76.94895844590283,
+              29.57539626272169
+            ],
+            [
+              76.94886828992661,
+              29.575911867614874
+            ],
+            [
+              76.94904129768314,
+              29.575909770539024
+            ],
+            [
+              76.94912638173864,
+              29.575654194313312
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "village": "Raseen",
+        "khewat": "Khewat 11 (Sole Ownership - 15.8 Acres)",
+        "ownership_type": "Sole",
+        "murabba": "19",
+        "requested_kila": "4/2",
+        "khas_no": "4/2",
+        "kanal": 5,
+        "marla": 16,
+        "area_sqm": 2929.520369685,
+        "objectid": 179788
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.94743284045508,
+              29.57484193168313
+            ],
+            [
+              76.94681007456072,
+              29.574849461149118
+            ],
+            [
+              76.94681683849588,
+              29.57528723474038
+            ],
+            [
+              76.94743961356471,
+              29.575279881865953
+            ],
+            [
+              76.94743284045508,
+              29.57484193168313
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "village": "Raseen",
+        "khewat": "Khewat 11 (Sole Ownership - 15.8 Acres)",
+        "ownership_type": "Sole",
+        "murabba": "19",
+        "requested_kila": "5/2",
+        "khas_no": "5/2",
+        "kanal": 6,
+        "marla": 9,
+        "area_sqm": 3256.557606895,
+        "objectid": 179790
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.94815939610068,
+              29.574833111649255
+            ],
+            [
+              76.947467461943,
+              29.57484150407861
+            ],
+            [
+              76.94747421286459,
+              29.5752794735278
+            ],
+            [
+              76.94816617898087,
+              29.575271299748508
+            ],
+            [
+              76.94815939610068,
+              29.574833111649255
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "village": "Raseen",
+        "khewat": "Khewat 11 (Sole Ownership - 15.8 Acres)",
+        "ownership_type": "Sole",
+        "murabba": "19",
+        "requested_kila": "6",
+        "khas_no": "6",
+        "kanal": 8,
+        "marla": 0,
+        "area_sqm": 4040.818292105,
+        "objectid": 179805
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.94745903837968,
+              29.574297960704072
+            ],
+            [
+              76.947467461943,
+              29.57484150407861
+            ],
+            [
+              76.94815939610068,
+              29.574833111649255
+            ],
+            [
+              76.94815098488564,
+              29.57428949065859
+            ],
+            [
+              76.94745903837968,
+              29.574297960704072
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "village": "Raseen",
+        "khewat": "Khewat 11 (Sole Ownership - 15.8 Acres)",
+        "ownership_type": "Sole",
+        "murabba": "19",
+        "requested_kila": "7",
+        "khas_no": "7",
+        "kanal": 7,
+        "marla": 4,
+        "area_sqm": 3636.48425567,
+        "objectid": 179804
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.94680168296462,
+              29.574305947831654
+            ],
+            [
+              76.94681007456072,
+              29.574849461149118
+            ],
+            [
+              76.94743284045508,
+              29.57484193168313
+            ],
+            [
+              76.94742444067118,
+              29.574298380733815
+            ],
+            [
+              76.94680168296462,
+              29.574305947831654
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "village": "Raseen",
+        "khewat": "Khewat 11 (Sole Ownership - 15.8 Acres)",
+        "ownership_type": "Sole",
+        "murabba": "19",
+        "requested_kila": "8",
+        "khas_no": "8",
+        "kanal": 8,
+        "marla": 0,
+        "area_sqm": 4040.312191335,
+        "objectid": 179803
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.9460835135055,
+              29.57485824229558
+            ],
+            [
+              76.94677547661674,
+              29.574849879214348
+            ],
+            [
+              76.94676710680552,
+              29.57430636196049
+            ],
+            [
+              76.94607513180519,
+              29.574314772877052
+            ],
+            [
+              76.9460835135055,
+              29.57485824229558
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "village": "Raseen",
+        "khewat": "Khewat 11 (Sole Ownership - 15.8 Acres)",
+        "ownership_type": "Sole",
+        "murabba": "19",
+        "requested_kila": "14",
+        "khas_no": "14",
+        "kanal": 7,
+        "marla": 4,
+        "area_sqm": 3636.45930723,
+        "objectid": 179814
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.94679329060091,
+              29.573762434482735
+            ],
+            [
+              76.94680168296462,
+              29.574305947831654
+            ],
+            [
+              76.94742444067118,
+              29.574298380733815
+            ],
+            [
+              76.94741604011986,
+              29.573754829753035
+            ],
+            [
+              76.94679329060091,
+              29.573762434482735
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "village": "Raseen",
+        "khewat": "Khewat 11 (Sole Ownership - 15.8 Acres)",
+        "ownership_type": "Sole",
+        "murabba": "19",
+        "requested_kila": "15",
+        "khas_no": "15",
+        "kanal": 7,
+        "marla": 11,
+        "area_sqm": 3816.35194113,
+        "objectid": 179815
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.9481495809321,
+              29.574198759367857
+            ],
+            [
+              76.94814304271088,
+              29.573776083601153
+            ],
+            [
+              76.94745110378558,
+              29.573784604813966
+            ],
+            [
+              76.94745903837968,
+              29.574297960704072
+            ],
+            [
+              76.94815098488564,
+              29.57428949065859
+            ],
+            [
+              76.9481495809321,
+              29.574198759367857
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "village": "Raseen",
+        "khewat": "Khewat 11 (Sole Ownership - 15.8 Acres)",
+        "ownership_type": "Sole",
+        "murabba": "19",
+        "requested_kila": "16/2",
+        "khas_no": "16/2",
+        "kanal": 4,
+        "marla": 12,
+        "area_sqm": 2322.338720765,
+        "objectid": 179833
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.94783974162016,
+              29.573205946259012
+            ],
+            [
+              76.94744223710185,
+              29.573210855109224
+            ],
+            [
+              76.94745063760854,
+              29.573754407929936
+            ],
+            [
+              76.94784849950486,
+              29.573749509083196
+            ],
+            [
+              76.94783974162016,
+              29.573205946259012
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "village": "Raseen",
+        "khewat": "Khewat 11 (Sole Ownership - 15.8 Acres)",
+        "ownership_type": "Sole",
+        "murabba": "19",
+        "requested_kila": "17",
+        "khas_no": "17",
+        "kanal": 7,
+        "marla": 12,
+        "area_sqm": 3838.471310445,
+        "objectid": 179832
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.94678489948136,
+              29.573218918366102
+            ],
+            [
+              76.94679329060091,
+              29.573762434482735
+            ],
+            [
+              76.94741604011986,
+              29.573754829753035
+            ],
+            [
+              76.94745063760854,
+              29.573754407929936
+            ],
+            [
+              76.94744223710185,
+              29.573210855109224
+            ],
+            [
+              76.94678489948136,
+              29.573218918366102
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "village": "Raseen",
+        "khewat": "Khewat 11 (Sole Ownership - 15.8 Acres)",
+        "ownership_type": "Sole",
+        "murabba": "19",
+        "requested_kila": "18",
+        "khas_no": "18",
+        "kanal": 8,
+        "marla": 0,
+        "area_sqm": 4040.36535853,
+        "objectid": 180470
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.94605836809563,
+              29.573227830307456
+            ],
+            [
+              76.94606671355109,
+              29.573771321094448
+            ],
+            [
+              76.94675869414566,
+              29.573762857021535
+            ],
+            [
+              76.94675030324588,
+              29.573219342698284
+            ],
+            [
+              76.94605836809563,
+              29.573227830307456
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "village": "Raseen",
+        "khewat": "Khewat 11 (Sole Ownership - 15.8 Acres)",
+        "ownership_type": "Sole",
+        "murabba": "19",
+        "requested_kila": "23",
+        "khas_no": "23",
+        "kanal": 8,
+        "marla": 0,
+        "area_sqm": 4040.52557418,
+        "objectid": 180480
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.946741917659,
+              29.572675768705885
+            ],
+            [
+              76.94604998852441,
+              29.572684322835098
+            ],
+            [
+              76.94605836809563,
+              29.573227830307456
+            ],
+            [
+              76.94675030324588,
+              29.573219342698284
+            ],
+            [
+              76.946741917659,
+              29.572675768705885
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "village": "Raseen",
+        "khewat": "Khewat 11 (Sole Ownership - 15.8 Acres)",
+        "ownership_type": "Sole",
+        "murabba": "19",
+        "requested_kila": "24",
+        "khas_no": "24",
+        "kanal": 7,
+        "marla": 12,
+        "area_sqm": 3838.885378835,
+        "objectid": 180481
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.94743384493405,
+              29.572667238965956
+            ],
+            [
+              76.9467765146892,
+              29.57267534166322
+            ],
+            [
+              76.94678489948136,
+              29.573218918366102
+            ],
+            [
+              76.94744223710185,
+              29.573210855109224
+            ],
+            [
+              76.94743384493405,
+              29.572667238965956
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "village": "Raseen",
+        "khewat": "Khewat 5 (Co-Ownership - 4.81 Acres Share)",
+        "ownership_type": "Co-ownership",
+        "murabba": "16",
+        "requested_kila": "18/2",
+        "khas_no": "18/2",
+        "kanal": 2,
+        "marla": 0,
+        "area_sqm": 1011.801239695,
+        "objectid": 180666
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.94679647035579,
+              29.57620815776696
+            ],
+            [
+              76.94610421486209,
+              29.57620133434498
+            ],
+            [
+              76.94610444721293,
+              29.57621645716206
+            ],
+            [
+              76.94610572774005,
+              29.57629982163878
+            ],
+            [
+              76.94610630480487,
+              29.576337429790648
+            ],
+            [
+              76.94679857465961,
+              29.57634425386438
+            ],
+            [
+              76.94679647035579,
+              29.57620815776696
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "village": "Raseen",
+        "khewat": "Khewat 5 (Co-Ownership - 4.81 Acres Share)",
+        "ownership_type": "Co-ownership",
+        "murabba": "16",
+        "requested_kila": "19/2",
+        "khas_no": "19/2",
+        "kanal": 0,
+        "marla": 15,
+        "area_sqm": 380.262353665,
+        "objectid": 180669
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.94610421486209,
+              29.57620133434498
+            ],
+            [
+              76.94582246369438,
+              29.57620467157655
+            ],
+            [
+              76.94586788823797,
+              29.576340254520577
+            ],
+            [
+              76.94610630480487,
+              29.576337429790648
+            ],
+            [
+              76.94610572774005,
+              29.57629982163878
+            ],
+            [
+              76.94610444721293,
+              29.57621645716206
+            ],
+            [
+              76.94610421486209,
+              29.57620133434498
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "village": "Raseen",
+        "khewat": "Khewat 5 (Co-Ownership - 4.81 Acres Share)",
+        "ownership_type": "Co-ownership",
+        "murabba": "19",
+        "requested_kila": "1/2",
+        "khas_no": "1/2",
+        "kanal": 3,
+        "marla": 2,
+        "area_sqm": 1570.36733158,
+        "objectid": 179783
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.94539155111353,
+              29.574866602660187
+            ],
+            [
+              76.94469960754753,
+              29.574874935682143
+            ],
+            [
+              76.94470222083565,
+              29.575045056461548
+            ],
+            [
+              76.94470238920132,
+              29.575055991979802
+            ],
+            [
+              76.94539527022805,
+              29.57510804632421
+            ],
+            [
+              76.94539155111353,
+              29.574866602660187
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "village": "Raseen",
+        "khewat": "Khewat 5 (Co-Ownership - 4.81 Acres Share)",
+        "ownership_type": "Co-ownership",
+        "murabba": "19",
+        "requested_kila": "2/3/2",
+        "khas_no": "2/3/2",
+        "kanal": 5,
+        "marla": 0,
+        "area_sqm": 2524.49417981,
+        "objectid": 179899
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.94539527022805,
+              29.57510804632421
+            ],
+            [
+              76.94609026543058,
+              29.57529598371582
+            ],
+            [
+              76.9460835135055,
+              29.57485824229558
+            ],
+            [
+              76.94539155111353,
+              29.574866602660187
+            ],
+            [
+              76.94539527022805,
+              29.57510804632421
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "village": "Raseen",
+        "khewat": "Khewat 5 (Co-Ownership - 4.81 Acres Share)",
+        "ownership_type": "Co-ownership",
+        "murabba": "19",
+        "requested_kila": "3/2",
+        "khas_no": "3/2",
+        "kanal": 6,
+        "marla": 9,
+        "area_sqm": 3254.252217165,
+        "objectid": 179793
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.94609026543058,
+              29.57529598371582
+            ],
+            [
+              76.94678223935357,
+              29.575287651927287
+            ],
+            [
+              76.94677547661674,
+              29.574849879214348
+            ],
+            [
+              76.9460835135055,
+              29.57485824229558
+            ],
+            [
+              76.94609026543058,
+              29.57529598371582
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "village": "Raseen",
+        "khewat": "Khewat 5 (Co-Ownership - 4.81 Acres Share)",
+        "ownership_type": "Co-ownership",
+        "murabba": "19",
+        "requested_kila": "9",
+        "khas_no": "9",
+        "kanal": 8,
+        "marla": 0,
+        "area_sqm": 4039.9172827,
+        "objectid": 179811
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.9453831780222,
+              29.574323173558543
+            ],
+            [
+              76.94539155111353,
+              29.574866602660187
+            ],
+            [
+              76.9460835135055,
+              29.57485824229558
+            ],
+            [
+              76.94607513180519,
+              29.574314772877052
+            ],
+            [
+              76.9453831780222,
+              29.574323173558543
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "village": "Raseen",
+        "khewat": "Khewat 5 (Co-Ownership - 4.81 Acres Share)",
+        "ownership_type": "Co-ownership",
+        "murabba": "19",
+        "requested_kila": "10",
+        "khas_no": "10",
+        "kanal": 8,
+        "marla": 0,
+        "area_sqm": 4039.55000643,
+        "objectid": 179810
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.9453831780222,
+              29.574323173558543
+            ],
+            [
+              76.94505449999916,
+              29.57432714164058
+            ],
+            [
+              76.94469125197084,
+              29.574331526917568
+            ],
+            [
+              76.94469960754753,
+              29.574874935682143
+            ],
+            [
+              76.94539155111353,
+              29.574866602660187
+            ],
+            [
+              76.9453831780222,
+              29.574323173558543
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "village": "Raseen",
+        "khewat": "Khewat 5 (Co-Ownership - 4.81 Acres Share)",
+        "ownership_type": "Co-ownership",
+        "murabba": "19",
+        "requested_kila": "11/1/1",
+        "khas_no": "11/1/1",
+        "kanal": 3,
+        "marla": 18,
+        "area_sqm": 1985.280310515,
+        "objectid": 179819
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.94504591466865,
+              29.573783734478084
+            ],
+            [
+              76.94495529312903,
+              29.57378483394372
+            ],
+            [
+              76.94482126774788,
+              29.57378645914965
+            ],
+            [
+              76.94468567563958,
+              29.573969313418303
+            ],
+            [
+              76.94469125197084,
+              29.574331526917568
+            ],
+            [
+              76.94505449999916,
+              29.57432714164058
+            ],
+            [
+              76.94504591466865,
+              29.573783734478084
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "village": "Raseen",
+        "khewat": "Khewat 5 (Co-Ownership - 4.81 Acres Share)",
+        "ownership_type": "Co-ownership",
+        "murabba": "19",
+        "requested_kila": "11/2",
+        "khas_no": "11/2",
+        "kanal": 3,
+        "marla": 16,
+        "area_sqm": 1919.4723325,
+        "objectid": 180582
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.94504591466865,
+              29.573783734478084
+            ],
+            [
+              76.94505449999916,
+              29.57432714164058
+            ],
+            [
+              76.9453831780222,
+              29.574323173558543
+            ],
+            [
+              76.94537480519473,
+              29.573779744410356
+            ],
+            [
+              76.94504591466865,
+              29.573783734478084
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "village": "Raseen",
+        "khewat": "Khewat 5 (Co-Ownership - 4.81 Acres Share)",
+        "ownership_type": "Co-ownership",
+        "murabba": "19",
+        "requested_kila": "12",
+        "khas_no": "12",
+        "kanal": 8,
+        "marla": 0,
+        "area_sqm": 4039.71999072,
+        "objectid": 179812
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.9453831780222,
+              29.574323173558543
+            ],
+            [
+              76.94607513180519,
+              29.574314772877052
+            ],
+            [
+              76.94606671355109,
+              29.573771321094448
+            ],
+            [
+              76.94537480519473,
+              29.573779744410356
+            ],
+            [
+              76.9453831780222,
+              29.574323173558543
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "village": "Raseen",
+        "khewat": "Khewat 5 (Co-Ownership - 4.81 Acres Share)",
+        "ownership_type": "Co-ownership",
+        "murabba": "19",
+        "requested_kila": "13",
+        "khas_no": "13",
+        "kanal": 8,
+        "marla": 0,
+        "area_sqm": 4040.281371925,
+        "objectid": 179813
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.94606671355109,
+              29.573771321094448
+            ],
+            [
+              76.94607513180519,
+              29.574314772877052
+            ],
+            [
+              76.94676710680552,
+              29.57430636196049
+            ],
+            [
+              76.94675869414566,
+              29.573762857021535
+            ],
+            [
+              76.94606671355109,
+              29.573771321094448
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "village": "Raseen",
+        "khewat": "Khewat 5 (Co-Ownership - 4.81 Acres Share)",
+        "ownership_type": "Co-ownership",
+        "murabba": "19",
+        "requested_kila": "16/1",
+        "khas_no": "16/1",
+        "kanal": 3,
+        "marla": 0,
+        "area_sqm": 1516.33449852,
+        "objectid": 180581
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.94783974162016,
+              29.573205946259012
+            ],
+            [
+              76.94784849950486,
+              29.573749509083196
+            ],
+            [
+              76.94810797895995,
+              29.573746314144184
+            ],
+            [
+              76.94809957240372,
+              29.573202737202017
+            ],
+            [
+              76.94783974162016,
+              29.573205946259012
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "village": "Raseen",
+        "khewat": "Khewat 5 (Co-Ownership - 4.81 Acres Share)",
+        "ownership_type": "Co-ownership",
+        "murabba": "19",
+        "requested_kila": "19",
+        "khas_no": "19",
+        "kanal": 8,
+        "marla": 0,
+        "area_sqm": 4039.82814615,
+        "objectid": 180469
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.94536643672389,
+              29.573236313351124
+            ],
+            [
+              76.94537480519473,
+              29.573779744410356
+            ],
+            [
+              76.94606671355109,
+              29.573771321094448
+            ],
+            [
+              76.94605836809563,
+              29.573227830307456
+            ],
+            [
+              76.94536643672389,
+              29.573236313351124
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "village": "Raseen",
+        "khewat": "Khewat 5 (Co-Ownership - 4.81 Acres Share)",
+        "ownership_type": "Co-ownership",
+        "murabba": "19",
+        "requested_kila": "20/1/1",
+        "khas_no": "20/1/1",
+        "kanal": 4,
+        "marla": 8,
+        "area_sqm": 2221.72612317,
+        "objectid": 180468
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.94536643672389,
+              29.573236313351124
+            ],
+            [
+              76.94515885192365,
+              29.573238859805063
+            ],
+            [
+              76.94482126774788,
+              29.57378645914965
+            ],
+            [
+              76.94495529312903,
+              29.57378483394372
+            ],
+            [
+              76.94504591466865,
+              29.573783734478084
+            ],
+            [
+              76.94537480519473,
+              29.573779744410356
+            ],
+            [
+              76.94536643672389,
+              29.573236313351124
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "village": "Raseen",
+        "khewat": "Khewat 5 (Co-Ownership - 4.81 Acres Share)",
+        "ownership_type": "Co-ownership",
+        "murabba": "19",
+        "requested_kila": "22/2",
+        "khas_no": "22/2",
+        "kanal": 8,
+        "marla": 8,
+        "area_sqm": 4242.01229673,
+        "objectid": 180487
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.94549644422798,
+              29.572691167525303
+            ],
+            [
+              76.94515885192365,
+              29.573238859805063
+            ],
+            [
+              76.94536643672389,
+              29.573236313351124
+            ],
+            [
+              76.94605836809563,
+              29.573227830307456
+            ],
+            [
+              76.94604998852441,
+              29.572684322835098
+            ],
+            [
+              76.94549644422798,
+              29.572691167525303
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "village": "Raseen",
+        "khewat": "Khewat 5 (Co-Ownership - 4.81 Acres Share)",
+        "ownership_type": "Co-ownership",
+        "murabba": "19",
+        "requested_kila": "25",
+        "khas_no": "25",
+        "kanal": 8,
+        "marla": 0,
+        "area_sqm": 4040.773684135,
+        "objectid": 180482
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.94812576273625,
+              29.572658767110298
+            ],
+            [
+              76.94743384493405,
+              29.572667238965956
+            ],
+            [
+              76.94744223710185,
+              29.573210855109224
+            ],
+            [
+              76.94783974162016,
+              29.573205946259012
+            ],
+            [
+              76.94809957240372,
+              29.573202737202017
+            ],
+            [
+              76.94813416843361,
+              29.573202303498604
+            ],
+            [
+              76.94812576273625,
+              29.572658767110298
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "village": "Raseen",
+        "khewat": "Khewat 5 (Co-Ownership - 4.81 Acres Share)",
+        "ownership_type": "Co-ownership",
+        "murabba": "20",
+        "requested_kila": "5/2",
+        "khas_no": "5/2",
+        "kanal": 2,
+        "marla": 0,
+        "area_sqm": 1022.962496695,
+        "objectid": 179782
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.94469960754753,
+              29.574874935682143
+            ],
+            [
+              76.9441115315015,
+              29.574881933463192
+            ],
+            [
+              76.94404332383975,
+              29.575003974716473
+            ],
+            [
+              76.94470238920132,
+              29.575055991979802
+            ],
+            [
+              76.94470222083565,
+              29.575045056461548
+            ],
+            [
+              76.94469960754753,
+              29.574874935682143
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "village": "Raseen",
+        "khewat": "Khewat 5 (Co-Ownership - 4.81 Acres Share)",
+        "ownership_type": "Co-ownership",
+        "murabba": "20",
+        "requested_kila": "6",
+        "khas_no": "6",
+        "kanal": 5,
+        "marla": 17,
+        "area_sqm": 2956.314219225,
+        "objectid": 179809
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.94469125197084,
+              29.574331526917568
+            ],
+            [
+              76.94468567563958,
+              29.573969313418303
+            ],
+            [
+              76.94468521041412,
+              29.573939069568777
+            ],
+            [
+              76.9441115315015,
+              29.574881933463192
+            ],
+            [
+              76.94469960754753,
+              29.574874935682143
+            ],
+            [
+              76.94469125197084,
+              29.574331526917568
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "village": "Raseen",
+        "khewat": "Khewat 5 (Co-Ownership - 4.81 Acres Share)",
+        "ownership_type": "Co-ownership",
+        "murabba": "26",
+        "requested_kila": "2/2/2",
+        "khas_no": "2/2/2",
+        "kanal": 4,
+        "marla": 1,
+        "area_sqm": 2046.019691905,
+        "objectid": 180409
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.94583395769185,
+              29.572143368246813
+            ],
+            [
+              76.94551519345495,
+              29.572660736831345
+            ],
+            [
+              76.94604952280633,
+              29.57265412682413
+            ],
+            [
+              76.94604161146488,
+              29.572140771072952
+            ],
+            [
+              76.94583395769185,
+              29.572143368246813
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "village": "Raseen",
+        "khewat": "Khewat 5 (Co-Ownership - 4.81 Acres Share)",
+        "ownership_type": "Co-ownership",
+        "murabba": "27",
+        "requested_kila": "2/2/1",
+        "khas_no": "2/2/1",
+        "kanal": 5,
+        "marla": 5,
+        "area_sqm": 2660.60115473,
+        "objectid": 179776
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.94950399092704,
+              29.572278261247504
+            ],
+            [
+              76.94946659385438,
+              29.5720972507109
+            ],
+            [
+              76.94942354551826,
+              29.57209781157307
+            ],
+            [
+              76.94880929519994,
+              29.572105808615508
+            ],
+            [
+              76.94881488116019,
+              29.572468265945385
+            ],
+            [
+              76.94943768474651,
+              29.572460156742945
+            ],
+            [
+              76.94950678378856,
+              29.57245925752971
+            ],
+            [
+              76.94950399092704,
+              29.572278261247504
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "village": "Raseen",
+        "khewat": "Khewat 5 (Co-Ownership - 4.81 Acres Share)",
+        "ownership_type": "Co-ownership",
+        "murabba": "27",
+        "requested_kila": "3/2",
+        "khas_no": "3/2",
+        "kanal": 7,
+        "marla": 0,
+        "area_sqm": 3538.0752155,
+        "objectid": 179777
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.9501930848957,
+              29.572087790421232
+            ],
+            [
+              76.94960497921447,
+              29.57209544858112
+            ],
+            [
+              76.9496423765483,
+              29.572276459969462
+            ],
+            [
+              76.94950958507714,
+              29.57264074450723
+            ],
+            [
+              76.95020148962581,
+              29.572631785635874
+            ],
+            [
+              76.95019588893986,
+              29.572269252051875
+            ],
+            [
+              76.9501930848957,
+              29.572087790421232
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "village": "Raseen",
+        "khewat": "Khewat 5 (Co-Ownership - 4.81 Acres Share)",
+        "ownership_type": "Co-ownership",
+        "murabba": "27",
+        "requested_kila": "7/2",
+        "khas_no": "7/2",
+        "kanal": 2,
+        "marla": 16,
+        "area_sqm": 1412.95860433,
+        "objectid": 180616
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.95042598761407,
+              29.571540595741205
+            ],
+            [
+              76.95018469192829,
+              29.571543748976303
+            ],
+            [
+              76.9501930848957,
+              29.572087790421232
+            ],
+            [
+              76.95043525917264,
+              29.57208463685415
+            ],
+            [
+              76.95042598761407,
+              29.571540595741205
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "village": "Raseen",
+        "khewat": "Khewat 5 (Co-Ownership - 4.81 Acres Share)",
+        "ownership_type": "Co-ownership",
+        "murabba": "27",
+        "requested_kila": "8/1",
+        "khas_no": "8/1",
+        "kanal": 7,
+        "marla": 8,
+        "area_sqm": 3740.68860036,
+        "objectid": 180402
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.94949280665236,
+              29.571552787547606
+            ],
+            [
+              76.94960497921447,
+              29.57209544858112
+            ],
+            [
+              76.9501930848957,
+              29.572087790421232
+            ],
+            [
+              76.95018469192829,
+              29.571543748976303
+            ],
+            [
+              76.94949280665236,
+              29.571552787547606
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "village": "Raseen",
+        "khewat": "Khewat 5 (Co-Ownership - 4.81 Acres Share)",
+        "ownership_type": "Co-ownership",
+        "murabba": "27",
+        "requested_kila": "13/1",
+        "khas_no": "13/1",
+        "kanal": 0,
+        "marla": 9,
+        "area_sqm": 228.10013451,
+        "objectid": 180617
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.95018422511822,
+              29.571513505210177
+            ],
+            [
+              76.9494923271894,
+              29.57152165975371
+            ],
+            [
+              76.94949280665236,
+              29.571552787547606
+            ],
+            [
+              76.95018469192829,
+              29.571543748976303
+            ],
+            [
+              76.95018422511822,
+              29.571513505210177
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "village": "Raseen",
+        "khewat": "Khewat 6 (Co-Ownership - 3.05 Acres Share)",
+        "ownership_type": "Co-ownership",
+        "murabba": "17",
+        "requested_kila": "10/2",
+        "khas_no": "10/2",
+        "kanal": 0,
+        "marla": 13,
+        "area_sqm": 335.761862475,
+        "objectid": 180565
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.94838349166248,
+              29.57700505884812
+            ],
+            [
+              76.94824509754284,
+              29.577006703950023
+            ],
+            [
+              76.9481951023104,
+              29.577129769205936
+            ],
+            [
+              76.94819882393624,
+              29.577369201357815
+            ],
+            [
+              76.94838349166248,
+              29.57700505884812
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "village": "Raseen",
+        "khewat": "Khewat 6 (Co-Ownership - 3.05 Acres Share)",
+        "ownership_type": "Co-ownership",
+        "murabba": "17",
+        "requested_kila": "11/2",
+        "khas_no": "11/2",
+        "kanal": 1,
+        "marla": 12,
+        "area_sqm": 808.26604671,
+        "objectid": 180568
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.94856912083982,
+              29.57645903106655
+            ],
+            [
+              76.94843072872716,
+              29.576460741271635
+            ],
+            [
+              76.94824509754284,
+              29.577006703950023
+            ],
+            [
+              76.94838349166248,
+              29.57700505884812
+            ],
+            [
+              76.94856912083982,
+              29.57645903106655
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "village": "Raseen",
+        "khewat": "Khewat 6 (Co-Ownership - 3.05 Acres Share)",
+        "ownership_type": "Co-ownership",
+        "murabba": "17",
+        "requested_kila": "20/2",
+        "khas_no": "20/2",
+        "kanal": 1,
+        "marla": 12,
+        "area_sqm": 819.046801645,
+        "objectid": 179951
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.94886828992661,
+              29.575911867614874
+            ],
+            [
+              76.94872989689368,
+              29.575913543837054
+            ],
+            [
+              76.94868467815738,
+              29.575995220627146
+            ],
+            [
+              76.94866206876306,
+              29.576036059017323
+            ],
+            [
+              76.94859185029479,
+              29.57616288862346
+            ],
+            [
+              76.94842692093064,
+              29.576460788140306
+            ],
+            [
+              76.94843072872716,
+              29.576460741271635
+            ],
+            [
+              76.94856912083982,
+              29.57645903106655
+            ],
+            [
+              76.94886828992661,
+              29.575911867614874
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "village": "Raseen",
+        "khewat": "Khewat 6 (Co-Ownership - 3.05 Acres Share)",
+        "ownership_type": "Co-ownership",
+        "murabba": "17",
+        "requested_kila": "21/2/2",
+        "khas_no": "21/2/2",
+        "kanal": 1,
+        "marla": 1,
+        "area_sqm": 531.868268655,
+        "objectid": 180571
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.9488602359235,
+              29.575397589092514
+            ],
+            [
+              76.94880607725023,
+              29.575398320126176
+            ],
+            [
+              76.94872989689368,
+              29.575913543837054
+            ],
+            [
+              76.94886828992661,
+              29.575911867614874
+            ],
+            [
+              76.9488602359235,
+              29.575397589092514
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "village": "Raseen",
+        "khewat": "Khewat 6 (Co-Ownership - 3.05 Acres Share)",
+        "ownership_type": "Co-ownership",
+        "murabba": "17",
+        "requested_kila": "22/1/2",
+        "khas_no": "22/1/2",
+        "kanal": 0,
+        "marla": 4,
+        "area_sqm": 112.113705505,
+        "objectid": 180575
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.94921800834149,
+              29.575378964811502
+            ],
+            [
+              76.94922306410187,
+              29.57536377789714
+            ],
+            [
+              76.94910493078095,
+              29.57536522827527
+            ],
+            [
+              76.94885977622495,
+              29.57536823664361
+            ],
+            [
+              76.9488602359235,
+              29.575397589092514
+            ],
+            [
+              76.94895844590283,
+              29.57539626272169
+            ],
+            [
+              76.94921339558405,
+              29.575392819816464
+            ],
+            [
+              76.94921800834149,
+              29.575378964811502
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "village": "Raseen",
+        "khewat": "Khewat 6 (Co-Ownership - 3.05 Acres Share)",
+        "ownership_type": "Co-ownership",
+        "murabba": "18",
+        "requested_kila": "1/2/2",
+        "khas_no": "1/2/2",
+        "kanal": 6,
+        "marla": 6,
+        "area_sqm": 3188.518941685,
+        "objectid": 180717
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.94885813962757,
+              29.575263123343266
+            ],
+            [
+              76.94885250672188,
+              29.574900311362693
+            ],
+            [
+              76.94885133110921,
+              29.574824562216957
+            ],
+            [
+              76.94867834352313,
+              29.574826700195114
+            ],
+            [
+              76.94815939610068,
+              29.574833111649255
+            ],
+            [
+              76.94816617898087,
+              29.575271299748508
+            ],
+            [
+              76.94885813962757,
+              29.575263123343266
+            ]
+          ],
+          [
+            [
+              76.94859419671599,
+              29.57497898641838
+            ],
+            [
+              76.94859302296295,
+              29.5749033779888
+            ],
+            [
+              76.94867951720464,
+              29.574902355540786
+            ],
+            [
+              76.94868069013835,
+              29.574977917964908
+            ],
+            [
+              76.94859419671599,
+              29.57497898641838
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "village": "Raseen",
+        "khewat": "Khewat 6 (Co-Ownership - 3.05 Acres Share)",
+        "ownership_type": "Co-ownership",
+        "murabba": "18",
+        "requested_kila": "2/2",
+        "khas_no": "2/2",
+        "kanal": 4,
+        "marla": 3,
+        "area_sqm": 2111.461904505,
+        "objectid": 179897
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.94925273214794,
+              29.575257524645277
+            ],
+            [
+              76.94935298108383,
+              29.574818340710348
+            ],
+            [
+              76.94885133110921,
+              29.574824562216957
+            ],
+            [
+              76.94885250672188,
+              29.574900311362693
+            ],
+            [
+              76.94885813962757,
+              29.575263123343266
+            ],
+            [
+              76.9492525179187,
+              29.575258461619097
+            ],
+            [
+              76.94925273214794,
+              29.575257524645277
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "village": "Raseen",
+        "khewat": "Khewat 6 (Co-Ownership - 3.05 Acres Share)",
+        "ownership_type": "Co-ownership",
+        "murabba": "18",
+        "requested_kila": "9",
+        "khas_no": "9",
+        "kanal": 6,
+        "marla": 8,
+        "area_sqm": 3229.95676056,
+        "objectid": 179807
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.94884291482126,
+              29.574280870181607
+            ],
+            [
+              76.94885133110921,
+              29.574824562216957
+            ],
+            [
+              76.94935298108383,
+              29.574818340710348
+            ],
+            [
+              76.94940058853015,
+              29.57441308650476
+            ],
+            [
+              76.9495348392556,
+              29.57427219204258
+            ],
+            [
+              76.94884291482126,
+              29.574280870181607
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "village": "Raseen",
+        "khewat": "Khewat 6 (Co-Ownership - 3.05 Acres Share)",
+        "ownership_type": "Co-ownership",
+        "murabba": "18",
+        "requested_kila": "10",
+        "khas_no": "10",
+        "kanal": 8,
+        "marla": 0,
+        "area_sqm": 4041.342131295,
+        "objectid": 179806
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.94884291482126,
+              29.574280870181607
+            ],
+            [
+              76.94815098488564,
+              29.57428949065859
+            ],
+            [
+              76.94815939610068,
+              29.574833111649255
+            ],
+            [
+              76.94867834352313,
+              29.574826700195114
+            ],
+            [
+              76.94885133110921,
+              29.574824562216957
+            ],
+            [
+              76.94884291482126,
+              29.574280870181607
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "village": "Raseen",
+        "khewat": "Khewat 6 (Co-Ownership - 3.05 Acres Share)",
+        "ownership_type": "Co-ownership",
+        "murabba": "18",
+        "requested_kila": "11/1",
+        "khas_no": "11/1",
+        "kanal": 1,
+        "marla": 7,
+        "area_sqm": 672.82619942,
+        "objectid": 180580
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.94884151664236,
+              29.574190579130377
+            ],
+            [
+              76.9481495809321,
+              29.574198759367857
+            ],
+            [
+              76.94815098488564,
+              29.57428949065859
+            ],
+            [
+              76.94884291482126,
+              29.574280870181607
+            ],
+            [
+              76.94884151664236,
+              29.574190579130377
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "village": "Raseen",
+        "khewat": "Khewat 6 (Co-Ownership - 3.05 Acres Share)",
+        "ownership_type": "Co-ownership",
+        "murabba": "18",
+        "requested_kila": "12",
+        "khas_no": "12",
+        "kanal": 9,
+        "marla": 16,
+        "area_sqm": 4951.83692758,
+        "objectid": 179825
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.94976858809453,
+              29.573725325230182
+            ],
+            [
+              76.94952640611514,
+              29.57372839300293
+            ],
+            [
+              76.94883449879816,
+              29.573737178099623
+            ],
+            [
+              76.94884151664236,
+              29.574190579130377
+            ],
+            [
+              76.94884291482126,
+              29.574280870181607
+            ],
+            [
+              76.9495348392556,
+              29.57427219204258
+            ],
+            [
+              76.94975570326328,
+              29.573916731800068
+            ],
+            [
+              76.94976858809453,
+              29.573725325230182
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "village": "Raseen",
+        "khewat": "Khewat 6 (Co-Ownership - 3.05 Acres Share)",
+        "ownership_type": "Co-ownership",
+        "murabba": "18",
+        "requested_kila": "18",
+        "khas_no": "18",
+        "kanal": 4,
+        "marla": 2,
+        "area_sqm": 2071.80466988,
+        "objectid": 179828
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.94952640611514,
+              29.57372839300293
+            ],
+            [
+              76.94976858809453,
+              29.573725325230182
+            ],
+            [
+              76.94998503585673,
+              29.573178611125797
+            ],
+            [
+              76.94951799511652,
+              29.57318460442235
+            ],
+            [
+              76.94952640611514,
+              29.57372839300293
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "village": "Raseen",
+        "khewat": "Khewat 6 (Co-Ownership - 3.05 Acres Share)",
+        "ownership_type": "Co-ownership",
+        "murabba": "18",
+        "requested_kila": "19",
+        "khas_no": "19",
+        "kanal": 8,
+        "marla": 0,
+        "area_sqm": 4041.931989115,
+        "objectid": 179835
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.94882605136468,
+              29.573193502676524
+            ],
+            [
+              76.94883449879816,
+              29.573737178099623
+            ],
+            [
+              76.94952640611514,
+              29.57372839300293
+            ],
+            [
+              76.94951799511652,
+              29.57318460442235
+            ],
+            [
+              76.94882605136468,
+              29.573193502676524
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "village": "Raseen",
+        "khewat": "Khewat 6 (Co-Ownership - 3.05 Acres Share)",
+        "ownership_type": "Co-ownership",
+        "murabba": "18",
+        "requested_kila": "22",
+        "khas_no": "22",
+        "kanal": 8,
+        "marla": 0,
+        "area_sqm": 4042.595133765,
+        "objectid": 180476
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.94950958507714,
+              29.57264074450723
+            ],
+            [
+              76.94937119989362,
+              29.572642541144415
+            ],
+            [
+              76.94881767763175,
+              29.57264972778352
+            ],
+            [
+              76.94882605136468,
+              29.573193502676524
+            ],
+            [
+              76.94951799511652,
+              29.57318460442235
+            ],
+            [
+              76.94950958507714,
+              29.57264074450723
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "village": "Raseen",
+        "khewat": "Khewat 6 (Co-Ownership - 3.05 Acres Share)",
+        "ownership_type": "Co-ownership",
+        "murabba": "18",
+        "requested_kila": "23",
+        "khas_no": "23",
+        "kanal": 7,
+        "marla": 4,
+        "area_sqm": 3638.758230515,
+        "objectid": 180477
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.95020148962581,
+              29.572631785635874
+            ],
+            [
+              76.94950958507714,
+              29.57264074450723
+            ],
+            [
+              76.94951799511652,
+              29.57318460442235
+            ],
+            [
+              76.94998503585673,
+              29.573178611125797
+            ],
+            [
+              76.95028797800224,
+              29.572630669353348
+            ],
+            [
+              76.95020148962581,
+              29.572631785635874
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "village": "Raseen",
+        "khewat": "Khewat 6 (Co-Ownership - 3.05 Acres Share)",
+        "ownership_type": "Co-ownership",
+        "murabba": "27",
+        "requested_kila": "2/1",
+        "khas_no": "2/1",
+        "kanal": 2,
+        "marla": 13,
+        "area_sqm": 1348.999537705,
+        "objectid": 180660
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.94950678378856,
+              29.57245925752971
+            ],
+            [
+              76.94943768474651,
+              29.572460156742945
+            ],
+            [
+              76.94881488116019,
+              29.572468265945385
+            ],
+            [
+              76.94881767763175,
+              29.57264972778352
+            ],
+            [
+              76.94937119989362,
+              29.572642541144415
+            ],
+            [
+              76.94950958507714,
+              29.57264074450723
+            ],
+            [
+              76.94950678378856,
+              29.57245925752971
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "village": "Raseen",
+        "khewat": "Khewat 6 (Co-Ownership - 3.05 Acres Share)",
+        "ownership_type": "Co-ownership",
+        "murabba": "27",
+        "requested_kila": "2/2/2",
+        "khas_no": "2/2/2",
+        "kanal": 0,
+        "marla": 1,
+        "area_sqm": 33.723845355,
+        "objectid": 180663
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.94946659385438,
+              29.5720972507109
+            ],
+            [
+              76.94950399092704,
+              29.572278261247504
+            ],
+            [
+              76.94950119018267,
+              29.572096799515474
+            ],
+            [
+              76.94946659385438,
+              29.5720972507109
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "village": "Raseen",
+        "khewat": "Khewat 6 (Co-Ownership - 3.05 Acres Share)",
+        "ownership_type": "Co-ownership",
+        "murabba": "27",
+        "requested_kila": "3/1",
+        "khas_no": "3/1",
+        "kanal": 1,
+        "marla": 0,
+        "area_sqm": 505.531298465,
+        "objectid": 180664
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.94960497921447,
+              29.57209544858112
+            ],
+            [
+              76.94950119018267,
+              29.572096799515474
+            ],
+            [
+              76.94950399092704,
+              29.572278261247504
+            ],
+            [
+              76.94950678378856,
+              29.57245925752971
+            ],
+            [
+              76.94950958507714,
+              29.57264074450723
+            ],
+            [
+              76.9496423765483,
+              29.572276459969462
+            ],
+            [
+              76.94960497921447,
+              29.57209544858112
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "village": "Raseen",
+        "khewat": "Khewat 6 (Co-Ownership - 3.05 Acres Share)",
+        "ownership_type": "Co-ownership",
+        "murabba": "27",
+        "requested_kila": "8/2",
+        "khas_no": "8/2",
+        "kanal": 0,
+        "marla": 12,
+        "area_sqm": 303.3064398,
+        "objectid": 180662
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.94949280665236,
+              29.571552787547606
+            ],
+            [
+              76.94950119018267,
+              29.572096799515474
+            ],
+            [
+              76.94960497921447,
+              29.57209544858112
+            ],
+            [
+              76.94949280665236,
+              29.571552787547606
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "village": "Raseen",
+        "khewat": "Khewat 6 (Co-Ownership - 3.05 Acres Share)",
+        "ownership_type": "Co-ownership",
+        "murabba": "27",
+        "requested_kila": "9/1",
+        "khas_no": "9/1",
+        "kanal": 1,
+        "marla": 0,
+        "area_sqm": 505.40160552,
+        "objectid": 180661
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.94935445927304,
+              29.571554594393273
+            ],
+            [
+              76.94946659385438,
+              29.5720972507109
+            ],
+            [
+              76.94950119018267,
+              29.572096799515474
+            ],
+            [
+              76.94949280665236,
+              29.571552787547606
+            ],
+            [
+              76.94935445927304,
+              29.571554594393273
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "village": "Amritpur Khurd / Kherawali",
+        "khewat": "Khewat 406 (Co-Ownership)",
+        "ownership_type": "Co-ownership",
+        "murabba": "97",
+        "requested_kila": "24",
+        "khas_no": "24",
+        "kanal": 6,
+        "marla": 0,
+        "area_sqm": 3035.15264272,
+        "objectid": 155940
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.07581767216202,
+              29.59543039371038
+            ],
+            [
+              77.07541921938804,
+              29.59543652755156
+            ],
+            [
+              77.07518540902386,
+              29.595983868616
+            ],
+            [
+              77.07582638514383,
+              29.595974016243183
+            ],
+            [
+              77.07581767216202,
+              29.59543039371038
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "village": "Amritpur Khurd / Kherawali",
+        "khewat": "Khewat 406 (Co-Ownership)",
+        "ownership_type": "Co-ownership",
+        "murabba": "97",
+        "requested_kila": "25",
+        "khas_no": "25",
+        "kanal": 8,
+        "marla": 0,
+        "area_sqm": 4046.9290722,
+        "objectid": 155941
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.07651062676312,
+              29.595419724043026
+            ],
+            [
+              77.07581767216202,
+              29.59543039371038
+            ],
+            [
+              77.07582638514383,
+              29.595974016243183
+            ],
+            [
+              77.07651926723983,
+              29.595963405284337
+            ],
+            [
+              77.07651062676312,
+              29.595419724043026
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "village": "Amritpur Khurd / Kherawali",
+        "khewat": "Khewat 406 (Co-Ownership)",
+        "ownership_type": "Co-ownership",
+        "murabba": "124",
+        "requested_kila": "4/2",
+        "khas_no": "4/2",
+        "kanal": 3,
+        "marla": 10,
+        "area_sqm": 1770.633291905,
+        "objectid": 154198
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.07580902609517,
+              29.594886748435307
+            ],
+            [
+              77.07560113117617,
+              29.594889954667618
+            ],
+            [
+              77.07541921938804,
+              29.59543652755156
+            ],
+            [
+              77.07581767216202,
+              29.59543039371038
+            ],
+            [
+              77.07580902609517,
+              29.594886748435307
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "village": "Amritpur Khurd / Kherawali",
+        "khewat": "Khewat 406 (Co-Ownership)",
+        "ownership_type": "Co-ownership",
+        "murabba": "124",
+        "requested_kila": "5",
+        "khas_no": "5",
+        "kanal": 8,
+        "marla": 0,
+        "area_sqm": 4046.874984165,
+        "objectid": 154199
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.07650194258085,
+              29.594876112913557
+            ],
+            [
+              77.07598202872705,
+              29.59488409321224
+            ],
+            [
+              77.07580902609517,
+              29.594886748435307
+            ],
+            [
+              77.07581767216202,
+              29.59543039371038
+            ],
+            [
+              77.07651062676312,
+              29.595419724043026
+            ],
+            [
+              77.07650194258085,
+              29.594876112913557
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "village": "Amritpur Khurd / Kherawali",
+        "khewat": "Khewat 436 (Co-Ownership)",
+        "ownership_type": "Co-ownership",
+        "murabba": "63",
+        "requested_kila": "1",
+        "khas_no": "1",
+        "kanal": 8,
+        "marla": 0,
+        "area_sqm": 4040.06065793,
+        "objectid": 156284
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.07391843069712,
+              29.60628832839432
+            ],
+            [
+              77.07391012021765,
+              29.60578990330608
+            ],
+            [
+              77.07377175030412,
+              29.605791913992118
+            ],
+            [
+              77.07321849002109,
+              29.605799784955163
+            ],
+            [
+              77.073220493203,
+              29.605920620065586
+            ],
+            [
+              77.07322422596428,
+              29.606147204186033
+            ],
+            [
+              77.0732274307759,
+              29.606343600473345
+            ],
+            [
+              77.07348699115612,
+              29.606339865713448
+            ],
+            [
+              77.0738326701143,
+              29.60633489242307
+            ],
+            [
+              77.07391918298204,
+              29.60633364727817
+            ],
+            [
+              77.07391843069712,
+              29.60628832839432
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "village": "Amritpur Khurd / Kherawali",
+        "khewat": "Khewat 436 (Co-Ownership)",
+        "ownership_type": "Co-ownership",
+        "murabba": "63",
+        "requested_kila": "2",
+        "khas_no": "2",
+        "kanal": 8,
+        "marla": 0,
+        "area_sqm": 4040.82473817,
+        "objectid": 156283
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.07455008202649,
+              29.605780607741764
+            ],
+            [
+              77.07391012021765,
+              29.60578990330608
+            ],
+            [
+              77.07391843069712,
+              29.60628832839432
+            ],
+            [
+              77.07391918298204,
+              29.60633364727817
+            ],
+            [
+              77.07461095964602,
+              29.606323642274965
+            ],
+            [
+              77.07461020896851,
+              29.60627831616237
+            ],
+            [
+              77.07460325382667,
+              29.605858540036092
+            ],
+            [
+              77.07460195008447,
+              29.60577985433386
+            ],
+            [
+              77.07455008202649,
+              29.605780607741764
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "village": "Amritpur Khurd / Kherawali",
+        "khewat": "Khewat 436 (Co-Ownership)",
+        "ownership_type": "Co-ownership",
+        "murabba": "63",
+        "requested_kila": "3",
+        "khas_no": "3",
+        "kanal": 8,
+        "marla": 0,
+        "area_sqm": 4041.240467445,
+        "objectid": 156285
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.07529382182611,
+              29.605769797488556
+            ],
+            [
+              77.07467115565014,
+              29.60577884870458
+            ],
+            [
+              77.07460195008447,
+              29.60577985433386
+            ],
+            [
+              77.07460325382667,
+              29.605858540036092
+            ],
+            [
+              77.07461020896851,
+              29.60627831616237
+            ],
+            [
+              77.07461095964602,
+              29.606323642274965
+            ],
+            [
+              77.07492226475664,
+              29.606319128834112
+            ],
+            [
+              77.07493343233438,
+              29.606318966786983
+            ],
+            [
+              77.0750433276794,
+              29.606317371407613
+            ],
+            [
+              77.0750542805794,
+              29.606317212708372
+            ],
+            [
+              77.07525090832776,
+              29.606314357856586
+            ],
+            [
+              77.07530275083376,
+              29.60631360456518
+            ],
+            [
+              77.07529382182611,
+              29.605769797488556
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "village": "Amritpur Khurd / Kherawali",
+        "khewat": "Khewat 436 (Co-Ownership)",
+        "ownership_type": "Co-ownership",
+        "murabba": "63",
+        "requested_kila": "4",
+        "khas_no": "4",
+        "kanal": 6,
+        "marla": 4,
+        "area_sqm": 3132.332588405,
+        "objectid": 156286
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.07567447381749,
+              29.60576426150468
+            ],
+            [
+              77.07529382182611,
+              29.605769797488556
+            ],
+            [
+              77.07530275083376,
+              29.60631360456518
+            ],
+            [
+              77.07599455049976,
+              29.6063035414609
+            ],
+            [
+              77.07567447381749,
+              29.60576426150468
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "village": "Amritpur Khurd / Kherawali",
+        "khewat": "Khewat 436 (Co-Ownership)",
+        "ownership_type": "Co-ownership",
+        "murabba": "125",
+        "requested_kila": "15/2",
+        "khas_no": "15/2",
+        "kanal": 4,
+        "marla": 0,
+        "area_sqm": 2021.877258395,
+        "objectid": 157412
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.07960074163343,
+              29.593742271686438
+            ],
+            [
+              77.07960947397588,
+              29.594285883196303
+            ],
+            [
+              77.07995568948922,
+              29.594280738014497
+            ],
+            [
+              77.07994694716625,
+              29.593737133060486
+            ],
+            [
+              77.07960074163343,
+              29.593742271686438
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "village": "Amritpur Khurd / Kherawali",
+        "khewat": "Khewat 436 (Co-Ownership)",
+        "ownership_type": "Co-ownership",
+        "murabba": "125",
+        "requested_kila": "16",
+        "khas_no": "16",
+        "kanal": 8,
+        "marla": 0,
+        "area_sqm": 4043.77081363,
+        "objectid": 155850
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.07993820884404,
+              29.593193508152797
+            ],
+            [
+              77.07924581289376,
+              29.593203791314075
+            ],
+            [
+              77.07924653988908,
+              29.59324909252188
+            ],
+            [
+              77.07925453600778,
+              29.593747409410298
+            ],
+            [
+              77.07960074163343,
+              29.593742271686438
+            ],
+            [
+              77.07994694716625,
+              29.593737133060486
+            ],
+            [
+              77.07993893721736,
+              29.593238811129453
+            ],
+            [
+              77.07993820884404,
+              29.593193508152797
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "village": "Amritpur Khurd / Kherawali",
+        "khewat": "Khewat 436 (Co-Ownership)",
+        "ownership_type": "Co-ownership",
+        "murabba": "126",
+        "requested_kila": "2",
+        "khas_no": "2",
+        "kanal": 3,
+        "marla": 13,
+        "area_sqm": 1852.95504285,
+        "objectid": 155899
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.08135151528727,
+              29.59495507351151
+            ],
+            [
+              77.08134909373827,
+              29.594804083467924
+            ],
+            [
+              77.08065678262174,
+              29.594814185370765
+            ],
+            [
+              77.0806623618457,
+              29.59516147378974
+            ],
+            [
+              77.08135151528727,
+              29.59495507351151
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "village": "Amritpur Khurd / Kherawali",
+        "khewat": "Khewat 436 (Co-Ownership)",
+        "ownership_type": "Co-ownership",
+        "murabba": "126",
+        "requested_kila": "6",
+        "khas_no": "6",
+        "kanal": 2,
+        "marla": 18,
+        "area_sqm": 1459.71674232,
+        "objectid": 155880
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.08341878936801,
+              29.594320840960602
+            ],
+            [
+              77.08341730747395,
+              29.594230271644953
+            ],
+            [
+              77.08272501793728,
+              29.59424034598841
+            ],
+            [
+              77.08272984905982,
+              29.594542302639827
+            ],
+            [
+              77.08341878936801,
+              29.594320840960602
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "village": "Amritpur Khurd / Kherawali",
+        "khewat": "Khewat 436 (Co-Ownership)",
+        "ownership_type": "Co-ownership",
+        "murabba": "126",
+        "requested_kila": "7",
+        "khas_no": "7",
+        "kanal": 5,
+        "marla": 18,
+        "area_sqm": 2975.795435695,
+        "objectid": 155881
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.08272984905982,
+              29.594542302639827
+            ],
+            [
+              77.08272501793728,
+              29.59424034598841
+            ],
+            [
+              77.08203269329685,
+              29.594250434411535
+            ],
+            [
+              77.0820406783614,
+              29.59474868221553
+            ],
+            [
+              77.08272984905982,
+              29.594542302639827
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "village": "Amritpur Khurd / Kherawali",
+        "khewat": "Khewat 436 (Co-Ownership)",
+        "ownership_type": "Co-ownership",
+        "murabba": "126",
+        "requested_kila": "8",
+        "khas_no": "8",
+        "kanal": 8,
+        "marla": 15,
+        "area_sqm": 4435.76608176,
+        "objectid": 155898
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.0820406783614,
+              29.59474868221553
+            ],
+            [
+              77.08203269329685,
+              29.594250434411535
+            ],
+            [
+              77.081340369301,
+              29.594260518308882
+            ],
+            [
+              77.08134909373827,
+              29.594804083467924
+            ],
+            [
+              77.08135151528727,
+              29.59495507351151
+            ],
+            [
+              77.08174476501232,
+              29.594837304626893
+            ],
+            [
+              77.08188164040908,
+              29.594796309764778
+            ],
+            [
+              77.0820406783614,
+              29.59474868221553
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "village": "Amritpur Khurd / Kherawali",
+        "khewat": "Khewat 436 (Co-Ownership)",
+        "ownership_type": "Co-ownership",
+        "murabba": "126",
+        "requested_kila": "9",
+        "khas_no": "9",
+        "kanal": 8,
+        "marla": 0,
+        "area_sqm": 4042.87973544,
+        "objectid": 155897
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.081340369301,
+              29.594260518308882
+            ],
+            [
+              77.08064804390447,
+              29.594270598614745
+            ],
+            [
+              77.08065678262174,
+              29.594814185370765
+            ],
+            [
+              77.08134909373827,
+              29.594804083467924
+            ],
+            [
+              77.081340369301,
+              29.594260518308882
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "village": "Amritpur Khurd / Kherawali",
+        "khewat": "Khewat 436 (Co-Ownership)",
+        "ownership_type": "Co-ownership",
+        "murabba": "126",
+        "requested_kila": "10",
+        "khas_no": "10",
+        "kanal": 8,
+        "marla": 0,
+        "area_sqm": 4043.12246583,
+        "objectid": 155896
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.08030187614875,
+              29.59427564922064
+            ],
+            [
+              77.07995568948922,
+              29.594280738014497
+            ],
+            [
+              77.07996444408737,
+              29.5948243237873
+            ],
+            [
+              77.08031062640917,
+              29.594819234977454
+            ],
+            [
+              77.08065678262174,
+              29.594814185370765
+            ],
+            [
+              77.08064804390447,
+              29.594270598614745
+            ],
+            [
+              77.08030187614875,
+              29.59427564922064
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "village": "Amritpur Khurd / Kherawali",
+        "khewat": "Khewat 436 (Co-Ownership)",
+        "ownership_type": "Co-ownership",
+        "murabba": "126",
+        "requested_kila": "11",
+        "khas_no": "11",
+        "kanal": 8,
+        "marla": 0,
+        "area_sqm": 4043.20073051,
+        "objectid": 155874
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.08063930651777,
+              29.593727012697713
+            ],
+            [
+              77.07994694716625,
+              29.593737133060486
+            ],
+            [
+              77.07995568948922,
+              29.594280738014497
+            ],
+            [
+              77.08030187614875,
+              29.59427564922064
+            ],
+            [
+              77.08064804390447,
+              29.594270598614745
+            ],
+            [
+              77.08063930651777,
+              29.593727012697713
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "village": "Amritpur Khurd / Kherawali",
+        "khewat": "Khewat 436 (Co-Ownership)",
+        "ownership_type": "Co-ownership",
+        "murabba": "126",
+        "requested_kila": "12",
+        "khas_no": "12",
+        "kanal": 8,
+        "marla": 0,
+        "area_sqm": 4042.97637513,
+        "objectid": 155875
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.08133164514375,
+              29.593716953103115
+            ],
+            [
+              77.08063930651777,
+              29.593727012697713
+            ],
+            [
+              77.08064804390447,
+              29.594270598614745
+            ],
+            [
+              77.081340369301,
+              29.594260518308882
+            ],
+            [
+              77.08133164514375,
+              29.593716953103115
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "village": "Amritpur Khurd / Kherawali",
+        "khewat": "Khewat 436 (Co-Ownership)",
+        "ownership_type": "Co-ownership",
+        "murabba": "126",
+        "requested_kila": "13",
+        "khas_no": "13",
+        "kanal": 8,
+        "marla": 0,
+        "area_sqm": 4042.81953151,
+        "objectid": 155876
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.08202398235078,
+              29.593706889015007
+            ],
+            [
+              77.08133164514375,
+              29.593716953103115
+            ],
+            [
+              77.081340369301,
+              29.594260518308882
+            ],
+            [
+              77.08203269329685,
+              29.594250434411535
+            ],
+            [
+              77.08202398235078,
+              29.593706889015007
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "village": "Amritpur Khurd / Kherawali",
+        "khewat": "Khewat 436 (Co-Ownership)",
+        "ownership_type": "Co-ownership",
+        "murabba": "126",
+        "requested_kila": "14",
+        "khas_no": "14",
+        "kanal": 8,
+        "marla": 0,
+        "area_sqm": 4042.67474019,
+        "objectid": 155877
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.08271632022118,
+              29.59369682130293
+            ],
+            [
+              77.08202398235078,
+              29.593706889015007
+            ],
+            [
+              77.08203269329685,
+              29.594250434411535
+            ],
+            [
+              77.08272501793728,
+              29.59424034598841
+            ],
+            [
+              77.08271632022118,
+              29.59369682130293
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "village": "Amritpur Khurd / Kherawali",
+        "khewat": "Khewat 436 (Co-Ownership)",
+        "ownership_type": "Co-ownership",
+        "murabba": "126",
+        "requested_kila": "15",
+        "khas_no": "15",
+        "kanal": 8,
+        "marla": 0,
+        "area_sqm": 4042.3020479,
+        "objectid": 155878
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.08340861467696,
+              29.59368676509428
+            ],
+            [
+              77.08271632022118,
+              29.59369682130293
+            ],
+            [
+              77.08272501793728,
+              29.59424034598841
+            ],
+            [
+              77.08341730747395,
+              29.594230271644953
+            ],
+            [
+              77.08340861467696,
+              29.59368676509428
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "village": "Amritpur Khurd / Kherawali",
+        "khewat": "Khewat 436 (Co-Ownership)",
+        "ownership_type": "Co-ownership",
+        "murabba": "126",
+        "requested_kila": "16",
+        "khas_no": "16",
+        "kanal": 6,
+        "marla": 18,
+        "area_sqm": 3483.19872669,
+        "objectid": 155855
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.08293881650336,
+              29.593149943639098
+            ],
+            [
+              77.08270520427057,
+              29.59300209000406
+            ],
+            [
+              77.08270762280344,
+              29.593153297472632
+            ],
+            [
+              77.08271632022118,
+              29.59369682130293
+            ],
+            [
+              77.08340861467696,
+              29.59368676509428
+            ],
+            [
+              77.08340475338066,
+              29.59344483346619
+            ],
+            [
+              77.08293881650336,
+              29.593149943639098
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "village": "Amritpur Khurd / Kherawali",
+        "khewat": "Khewat 436 (Co-Ownership)",
+        "ownership_type": "Co-ownership",
+        "murabba": "126",
+        "requested_kila": "17",
+        "khas_no": "17",
+        "kanal": 8,
+        "marla": 0,
+        "area_sqm": 4042.76535404,
+        "objectid": 155854
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.08270762280344,
+              29.593153297472632
+            ],
+            [
+              77.08201527271656,
+              29.59316334355557
+            ],
+            [
+              77.08202398235078,
+              29.593706889015007
+            ],
+            [
+              77.08271632022118,
+              29.59369682130293
+            ],
+            [
+              77.08270762280344,
+              29.593153297472632
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "village": "Amritpur Khurd / Kherawali",
+        "khewat": "Khewat 436 (Co-Ownership)",
+        "ownership_type": "Co-ownership",
+        "murabba": "126",
+        "requested_kila": "18",
+        "khas_no": "18",
+        "kanal": 8,
+        "marla": 0,
+        "area_sqm": 4042.923191815,
+        "objectid": 155853
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.08137484875557,
+              29.593172633778998
+            ],
+            [
+              77.08132292227992,
+              29.593173386932502
+            ],
+            [
+              77.0813236480643,
+              29.593218684508507
+            ],
+            [
+              77.08133164514375,
+              29.593716953103115
+            ],
+            [
+              77.08202398235078,
+              29.593706889015007
+            ],
+            [
+              77.08201527271656,
+              29.59316334355557
+            ],
+            [
+              77.08137484875557,
+              29.593172633778998
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "village": "Amritpur Khurd / Kherawali",
+        "khewat": "Khewat 436 (Co-Ownership)",
+        "ownership_type": "Co-ownership",
+        "murabba": "126",
+        "requested_kila": "19",
+        "khas_no": "19",
+        "kanal": 8,
+        "marla": 0,
+        "area_sqm": 4043.07794064,
+        "objectid": 155852
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.08132292227992,
+              29.593173386932502
+            ],
+            [
+              77.08063056941116,
+              29.59318342673391
+            ],
+            [
+              77.08063129698749,
+              29.593228726100214
+            ],
+            [
+              77.08063930651777,
+              29.593727012697713
+            ],
+            [
+              77.08133164514375,
+              29.593716953103115
+            ],
+            [
+              77.0813236480643,
+              29.593218684508507
+            ],
+            [
+              77.08132292227992,
+              29.593173386932502
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "village": "Amritpur Khurd / Kherawali",
+        "khewat": "Khewat 436 (Co-Ownership)",
+        "ownership_type": "Co-ownership",
+        "murabba": "126",
+        "requested_kila": "20",
+        "khas_no": "20",
+        "kanal": 8,
+        "marla": 0,
+        "area_sqm": 4043.381600075,
+        "objectid": 155851
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.08063056941116,
+              29.59318342673391
+            ],
+            [
+              77.07993820884404,
+              29.593193508152797
+            ],
+            [
+              77.07993893721736,
+              29.593238811129453
+            ],
+            [
+              77.07994694716625,
+              29.593737133060486
+            ],
+            [
+              77.08063930651777,
+              29.593727012697713
+            ],
+            [
+              77.08063129698749,
+              29.593228726100214
+            ],
+            [
+              77.08063056941116,
+              29.59318342673391
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "village": "Amritpur Khurd / Kherawali",
+        "khewat": "Khewat 436 (Co-Ownership)",
+        "ownership_type": "Co-ownership",
+        "murabba": "126",
+        "requested_kila": "24",
+        "khas_no": "24",
+        "kanal": 7,
+        "marla": 18,
+        "area_sqm": 3996.50202515,
+        "objectid": 155826
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.08270520427057,
+              29.59300209000406
+            ],
+            [
+              77.08268285145043,
+              29.592979001456893
+            ],
+            [
+              77.08269892761818,
+              29.592609768151753
+            ],
+            [
+              77.08264700145524,
+              29.592610520907282
+            ],
+            [
+              77.08200658606525,
+              29.59261979769316
+            ],
+            [
+              77.08200730900239,
+              29.592665093498965
+            ],
+            [
+              77.08201527271656,
+              29.59316334355557
+            ],
+            [
+              77.08270762280344,
+              29.593153297472632
+            ],
+            [
+              77.08270520427057,
+              29.59300209000406
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "village": "Amritpur Khurd / Kherawali",
+        "khewat": "Khewat 436 (Co-Ownership)",
+        "ownership_type": "Co-ownership",
+        "murabba": "127",
+        "requested_kila": "11",
+        "khas_no": "11",
+        "kanal": 8,
+        "marla": 10,
+        "area_sqm": 4399.647711015,
+        "objectid": 155879
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.08377889522023,
+              29.593681402655275
+            ],
+            [
+              77.08340475338066,
+              29.59344483346619
+            ],
+            [
+              77.08340861467696,
+              29.59368676509428
+            ],
+            [
+              77.08341730747395,
+              29.594230271644953
+            ],
+            [
+              77.08341878936801,
+              29.594320840960602
+            ],
+            [
+              77.08357629428492,
+              29.594273686789187
+            ],
+            [
+              77.08373679592685,
+              29.59422563368937
+            ],
+            [
+              77.08383117558105,
+              29.594197377568285
+            ],
+            [
+              77.08410781668807,
+              29.594114556791
+            ],
+            [
+              77.08434951122327,
+              29.594042196982052
+            ],
+            [
+              77.08432998004888,
+              29.594029847607786
+            ],
+            [
+              77.08410417226347,
+              29.593887072521284
+            ],
+            [
+              77.08377889522023,
+              29.593681402655275
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

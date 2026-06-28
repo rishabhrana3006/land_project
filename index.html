@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rana Family - Land Holdings (Gharaunda, Karnal)</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <style>
+    * { box-sizing: border-box; }
+    html, body { margin: 0; height: 100%; font-family: system-ui, Arial, sans-serif; }
+    #app { display: flex; height: 100vh; }
+
+    #sidebar {
+      width: 320px;
+      flex: 0 0 320px;
+      background: #0b1f33;
+      color: #e7eef6;
+      padding: 16px 14px;
+      overflow-y: auto;
+    }
+    #sidebar h1 { font-size: 15px; margin: 0 0 14px; }
+    #sidebar p.subtitle { font-size: 11px; color: #9fb3c8; margin: 0 0 10px; }
+
+    #box-toggle-wrap {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      font-size: 12px;
+      color: #cdd9e5;
+      background: #15314d;
+      border: 1px solid #24507a;
+      border-radius: 6px;
+      padding: 8px 10px;
+      margin: 0 0 14px;
+      cursor: pointer;
+      user-select: none;
+    }
+    #box-toggle-wrap input { cursor: pointer; accent-color: #ffcc00; }
+
+    ul.tree, ul.tree ul { list-style: none; margin: 0; padding: 0; }
+    ul.tree ul { padding-left: 16px; }
+    ul.tree li { margin: 4px 0; }
+
+    .row {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      padding: 5px 6px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 14px;
+      line-height: 1.3;
+      user-select: none;
+      border-left: 4px solid transparent;
+    }
+    .row:hover { background: #15314d; }
+    .row.active { background: #ffcc00; color: #0b1f33; font-weight: 600; }
+    .row.disabled { color: #6b7d90; cursor: not-allowed; }
+    .row.disabled:hover { background: transparent; }
+
+    /* Color-coded levels (left accent border + subtle tint) */
+    .row.level-district { border-left-color: #b388ff; background: rgba(179,136,255,.10); }
+    .row.level-tehsil   { border-left-color: #5ec8ff; background: rgba(94,200,255,.10); }
+    .row.level-village  { border-left-color: #4dd0a7; background: rgba(77,208,167,.10); }
+    .row.level-khewat   { border-left-color: #ffb74d; background: rgba(255,183,77,.12); font-weight: 600; }
+    .row.level-murabba  { border-left-color: #c0ca33; background: rgba(192,202,51,.10); }
+    .row.level-khasra   { border-left-color: #8d9aa8; }
+    /* Active selection always wins visually */
+    .row.active { border-left-color: #0b1f33; }
+
+    .caret {
+      width: 12px;
+      flex: 0 0 12px;
+      font-size: 9px;
+      color: #9fb3c8;
+      transition: transform .12s ease;
+      text-align: center;
+    }
+    .row.active .caret { color: #0b1f33; }
+    .caret.open { transform: rotate(90deg); }
+    .caret.empty { visibility: hidden; }
+
+    .label em { font-style: normal; color: #9fb3c8; font-size: 11px; }
+    .row.active .label em { color: #4a3a00; }
+
+    ul.collapsed { display: none; }
+
+    /* Jamabandi record links */
+    #docs {
+      margin-top: 16px;
+      padding-top: 12px;
+      border-top: 1px solid #1d3a59;
+    }
+    .docs-head {
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: .05em;
+      color: #9fb3c8;
+      margin-bottom: 8px;
+    }
+    .docs-group { margin-bottom: 10px; }
+    .docs-village {
+      display: block;
+      font-size: 12px;
+      color: #cdd9e5;
+      margin-bottom: 4px;
+    }
+    .doc-link {
+      display: inline-block;
+      font-size: 12px;
+      color: #5ec8ff;
+      text-decoration: none;
+      background: #15314d;
+      border: 1px solid #24507a;
+      border-radius: 5px;
+      padding: 4px 8px;
+      margin: 0 4px 4px 0;
+    }
+    .doc-link:hover { background: #1d4063; color: #9fdcff; }
+
+    #map { flex: 1 1 auto; height: 100%; background: #0b1f33; position: relative; }
+
+    /* Map labels */
+    .khasra-label {
+      background: transparent; border: none; box-shadow: none;
+      color: #fff; font-size: 11px; font-weight: 600;
+      text-shadow: 0 0 3px #000, 0 0 3px #000;
+    }
+    .box-label {
+      background: transparent; border: none; box-shadow: none;
+      color: #fff; font-size: 13px; font-weight: 700;
+      text-shadow: 0 0 4px #000, 0 0 4px #000;
+    }
+    .leaflet-tooltip.khasra-label::before,
+    .leaflet-tooltip.box-label::before { display: none; }
+
+    /* Bottom-right info panel */
+    #infobox {
+      position: absolute;
+      right: 14px;
+      bottom: 22px;
+      z-index: 1000;
+      width: 210px;
+      background: rgba(11, 31, 51, 0.52);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      color: #e7eef6;
+      border: 1px solid rgba(36, 80, 122, 0.35);
+      border-radius: 6px;
+      padding: 8px 10px;
+      font-size: 11px;
+      line-height: 1.35;
+      box-shadow: 0 2px 10px rgba(0,0,0,.22);
+      display: none;
+    }
+    #infobox .info-title {
+      margin: 0 0 4px;
+      font-size: 12px;
+      font-weight: 600;
+      color: #ffcc00;
+      line-height: 1.25;
+    }
+    #infobox .info-land {
+      margin: 0 0 5px;
+      font-size: 11px;
+      color: #d8e4ef;
+    }
+    #infobox .info-land strong { color: #fff; font-weight: 600; }
+    #infobox .owners { margin-top: 4px; }
+    #infobox .owners:empty { display: none; }
+    #infobox .owner-row {
+      display: flex;
+      justify-content: space-between;
+      gap: 6px;
+      margin: 2px 0;
+      font-size: 10px;
+      color: #b8c9d9;
+    }
+    #infobox .owner-name {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      min-width: 0;
+    }
+    #infobox .owner-ratio { flex-shrink: 0; color: #ffcc00; font-weight: 600; }
+    #infobox .note {
+      margin-top: 5px;
+      font-size: 10px;
+      color: #8fa3b8;
+      line-height: 1.3;
+    }
+    #infobox .note:empty { display: none; }
+
+    /* Mobile controls - hidden on desktop */
+    #menu-btn {
+      display: none;
+      position: fixed;
+      top: 12px;
+      left: 12px;
+      z-index: 1600;
+      width: 44px;
+      height: 44px;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 4px;
+      background: rgba(11, 31, 51, 0.92);
+      border: 1px solid #24507a;
+      border-radius: 8px;
+      cursor: pointer;
+      box-shadow: 0 2px 8px rgba(0,0,0,.4);
+      transition: border-color .2s ease, box-shadow .2s ease;
+    }
+    #menu-btn.menu-glow {
+      border-color: #ffcc00;
+      animation: menu-glow 1.6s ease-in-out infinite;
+    }
+    @keyframes menu-glow {
+      0%, 100% {
+        box-shadow: 0 2px 8px rgba(0,0,0,.4), 0 0 0 0 rgba(255, 204, 0, 0.55);
+      }
+      50% {
+        box-shadow: 0 2px 12px rgba(0,0,0,.5), 0 0 18px 5px rgba(255, 204, 0, 0.45);
+      }
+    }
+    #menu-btn span {
+      display: block;
+      width: 20px;
+      height: 2px;
+      background: #e7eef6;
+      border-radius: 2px;
+    }
+    #scrim {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,.45);
+      z-index: 1400;
+    }
+    #sidebar-close {
+      display: none;
+      position: absolute;
+      top: 10px;
+      right: 12px;
+      width: 36px;
+      height: 36px;
+      background: #15314d;
+      color: #e7eef6;
+      border: 1px solid #24507a;
+      border-radius: 8px;
+      font-size: 22px;
+      line-height: 1;
+      cursor: pointer;
+    }
+
+    /* ---- Mobile layout (<= 768px) ---- */
+    @media (max-width: 768px) {
+      #app { display: block; }
+
+      #menu-btn {
+        display: flex;
+        width: 58px;
+        height: 58px;
+        top: 14px;
+        left: 14px;
+        gap: 5px;
+        border-radius: 12px;
+      }
+      #menu-btn span {
+        width: 26px;
+        height: 3px;
+      }
+      #menu-btn.hidden { display: none !important; }
+
+      #sidebar {
+        position: fixed;
+        inset: 0;
+        width: 100%;
+        max-width: 100%;
+        flex: none;
+        padding: 18px 16px;
+        transform: translateX(-100%);
+        transition: transform .25s ease;
+        z-index: 1500;
+      }
+      #sidebar.open { transform: translateX(0); }
+      #sidebar-close { display: block; }
+      #sidebar h1 { font-size: 18px; }
+
+      #scrim.open { display: block; }
+
+      #map { width: 100vw; height: 100vh; }
+
+      /* Larger touch targets */
+      .row {
+        padding: 9px 8px;
+        font-size: 15px;
+        min-height: 42px;
+      }
+      .caret { width: 16px; flex-basis: 16px; font-size: 11px; }
+      #box-toggle-wrap { font-size: 13px; padding: 10px 12px; }
+
+      /* Info panel becomes a bottom bar */
+      #infobox {
+        left: 10px;
+        right: 10px;
+        bottom: 10px;
+        width: auto;
+        padding: 9px 11px;
+      }
+
+      /* Keep Leaflet zoom controls clear of the hamburger button */
+      .leaflet-top.leaflet-left { margin-top: 72px; }
+    }
+  </style>
+</head>
+<body>
+  <button id="menu-btn" aria-label="Open menu">
+    <span></span><span></span><span></span>
+  </button>
+  <div id="scrim"></div>
+  <div id="app">
+    <aside id="sidebar">
+      <button id="sidebar-close" aria-label="Close menu">&times;</button>
+      <h1>Rana Land Holdings</h1>
+
+      <label id="box-toggle-wrap">
+        <input type="checkbox" id="box-toggle" />
+        Show Murabba boxes &amp; numbers
+      </label>
+      <ul class="tree" id="tree"></ul>
+
+      <div id="docs">
+        <div class="docs-head">Jamabandi records</div>
+        <div class="docs-group">
+          <span class="docs-village">Raseen</span>
+          <a class="doc-link" href="source_of_land/raseen_village_jamabandi/Raseen_Khewat_5.html" target="_blank" rel="noopener">Khewat 5</a>
+          <a class="doc-link" href="source_of_land/raseen_village_jamabandi/Raseen_Khetwat_6.html" target="_blank" rel="noopener">Khewat 6</a>
+          <a class="doc-link" href="source_of_land/raseen_village_jamabandi/Raseen_Khewat_11.html" target="_blank" rel="noopener">Khewat 11</a>
+        </div>
+        <div class="docs-group">
+          <span class="docs-village">Amritpur Khurd / Kherawali</span>
+          <a class="doc-link" href="source_of_land/amritpur_kherawali_chakmustra_village_jamabandi/Kehrawali_Amritpur_Khewat_406.html" target="_blank" rel="noopener">Khewat 406</a>
+          <a class="doc-link" href="source_of_land/amritpur_kherawali_chakmustra_village_jamabandi/Kehrawali_Amritpur_Khewat_436.html" target="_blank" rel="noopener">Khewat 436</a>
+        </div>
+      </div>
+    </aside>
+    <div id="map">
+      <div id="infobox">
+        <div id="info-scope" class="info-title">No selection</div>
+        <div id="info-land" class="info-land">-</div>
+        <div class="owners" id="info-owners"></div>
+        <div class="note" id="info-note"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="land_data.js"></script>
+  <script>
+    const SQM_PER_ACRE = 4046.8564224;
+
+    // ---- Map base layers ----
+    const HARYANA_CENTER = [29.06, 76.08];
+    const HARYANA_ZOOM = 8;
+
+    const map = L.map('map', {
+      center: HARYANA_CENTER,
+      zoom: HARYANA_ZOOM,
+      minZoom: 4,
+      maxZoom: 19,
+      attributionControl: false
+    });
+
+    L.tileLayer(
+      'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',
+      {
+        maxZoom: 19,
+        maxNativeZoom: 19
+      }
+    ).addTo(map);
+
+    L.tileLayer(
+      'https://server.arcgisonline.com/ArcGIS/rest/services/Reference/World_Boundaries_and_Places/MapServer/tile/{z}/{y}/{x}',
+      { maxZoom: 19, maxNativeZoom: 19 }
+    ).addTo(map);
+
+    // ---- Render layer groups (cleared/redrawn on each selection) ----
+    const khasraLayer = L.layerGroup().addTo(map);
+    const boxLayer = L.layerGroup();   // off by default; toggled on via checkbox
+
+    const data = window.LAND_DATA || { meta: {}, khewats: [] };
+
+    // ---- Geometry / rendering helpers ----
+    function mappedKhasras(murabba) {
+      return murabba.khasras.filter(k => k.mapped && k.rings && k.rings.length);
+    }
+
+    function drawKhasra(murabbaNo, khasra) {
+      const poly = L.polygon(khasra.rings, {
+        color: '#ffcc00', weight: 1,
+        fillColor: '#ffcc00', fillOpacity: 0.35, opacity: 0.8
+      });
+      poly.bindTooltip(murabbaNo + ' // ' + khasra.khas_no, {
+        permanent: true, direction: 'center', className: 'khasra-label'
+      });
+      khasraLayer.addLayer(poly);
+      return poly;
+    }
+
+    function drawBox(murabba) {
+      if (!murabba.box || !murabba.box.bounds) return;
+      const rect = L.rectangle(murabba.box.bounds, {
+        color: '#ffffff', weight: 2, fill: false, opacity: 0.7
+      });
+      rect.bindTooltip(String(murabba.number), {
+        permanent: true, direction: 'center', className: 'box-label'
+      });
+      boxLayer.addLayer(rect);
+    }
+
+    function clearLayers() {
+      khasraLayer.clearLayers();
+      boxLayer.clearLayers();
+    }
+
+    // Owned land for a set of khasras. Co-owned plots come back as the FULL
+    // plot, so the Rana family's owned land = polygon area x khewat.share
+    // (share = 1 for sole ownership). Returns raw accumulators so multiple
+    // khewats with different shares can be summed before formatting.
+    function ownedRaw(khasras, share) {
+      const f = (typeof share === 'number') ? share : 1;
+      let sqm = 0, marla = 0, count = 0;
+      khasras.forEach(k => {
+        if (typeof k.area_sqm === 'number') sqm += k.area_sqm;
+        marla += (k.kanal || 0) * 20 + (k.marla || 0);   // 20 Marla = 1 Kanal
+        if (k.mapped) count++;
+      });
+      return { acres: (sqm / SQM_PER_ACRE) * f, marlaTotal: marla * f, count };
+    }
+
+    function addOwned(a, b) {
+      return {
+        acres: a.acres + b.acres,
+        marlaTotal: a.marlaTotal + b.marlaTotal,
+        count: a.count + b.count,
+      };
+    }
+
+    // ---- Info panel ----
+    const infobox = document.getElementById('infobox');
+    function coNote(share) {
+      return (typeof share === 'number' && share < 1)
+        ? 'Co-owned: area is Rana share; map shows full plot.'
+        : '';
+    }
+
+    // Parse the leading "num/den" out of a ratio label (e.g. "640/1747",
+    // "12/17 (jointly)") into a numeric fraction; 0 if it can't be parsed.
+    function ratioValue(ratio) {
+      if (!ratio) return 0;
+      const m = String(ratio).match(/(\d+)\s*\/\s*(\d+)/);
+      if (!m) return 0;
+      const den = parseFloat(m[2]);
+      return den ? parseFloat(m[1]) / den : 0;
+    }
+
+    function sameDenominator(ratio) {
+      const m = String(ratio).match(/(\d+)\s*\/\s*(\d+)/);
+      return m ? m[2] : null;
+    }
+
+    function formatLand(owned) {
+      if (!owned || !owned.count) return '-';
+      const totalMarla = Math.round(owned.marlaTotal);
+      const kila = Math.floor(totalMarla / 160);
+      const kanal = Math.floor((totalMarla % 160) / 20);
+      const marla = totalMarla % 20;
+      const parts = [];
+      if (kila) parts.push(kila + ' Kila');
+      if (kanal) parts.push(kanal + ' Kanal');
+      if (marla || !parts.length) parts.push(marla + ' Marla');
+      return '<strong>' + owned.acres.toFixed(2) + ' Acres</strong> · ' + parts.join(' ');
+    }
+
+    function updateInfo(scopeLabel, owned, owners, note) {
+      infobox.style.display = 'block';
+      document.getElementById('info-scope').textContent = scopeLabel;
+      document.getElementById('info-land').innerHTML = formatLand(owned);
+
+      const ownersEl = document.getElementById('info-owners');
+      ownersEl.innerHTML = '';
+      const list = owners || [];
+      // Split the (already share-adjusted) owned area among co-owners by the
+      // ratio each holds, so each line shows that owner's acres + share.
+      // Only valid when every owner's ratio shares the same denominator
+      // (i.e. a single khewat); across khewats the bases differ, so we then
+      // show just the ratio to avoid misleading per-owner acreages.
+      const vals = list.map(o => ratioValue(o.ratio));
+      const sumVals = vals.reduce((a, b) => a + b, 0);
+      const dens = list.filter(o => o.ratio).map(o => sameDenominator(o.ratio));
+      const sameBasis = dens.length > 0 && dens.every(d => d === dens[0]);
+      const showAcres = sameBasis && owned && owned.count && sumVals > 0;
+      list.forEach((o, i) => {
+        const row = document.createElement('div');
+        row.className = 'owner-row';
+        const name = document.createElement('span');
+        name.className = 'owner-name';
+        name.textContent = o.name;
+        row.appendChild(name);
+        if (o.ratio) {
+          const r = document.createElement('span');
+          r.className = 'owner-ratio';
+          if (showAcres) {
+            const ac = owned.acres * (vals[i] / sumVals);
+            r.textContent = ac.toFixed(2) + ' Acres · ' + o.ratio;
+          } else {
+            r.textContent = o.ratio;
+          }
+          row.appendChild(r);
+        }
+        ownersEl.appendChild(row);
+      });
+      document.getElementById('info-note').textContent = note || '';
+    }
+
+    // ---- Selection ----
+    let activeRow = null;
+    function setActiveRow(rowEl) {
+      if (activeRow) activeRow.classList.remove('active');
+      activeRow = rowEl;
+      if (rowEl) rowEl.classList.add('active');
+    }
+
+    // Merge the owners across a village's khewats (de-duped) for the
+    // "all owned" view of that village.
+    function villageOwners(village) {
+      const seen = new Set();
+      const out = [];
+      village.khewats.forEach(k => (k.owners || []).forEach(o => {
+        const key = o.name + '|' + (o.ratio || '');
+        if (!seen.has(key)) { seen.add(key); out.push(o); }
+      }));
+      return out;
+    }
+
+    function selectAllOwned(village, rowEl, isInitial) {
+      setActiveRow(rowEl || null);
+      clearLayers();
+      let owned = { acres: 0, marlaTotal: 0, count: 0 };
+      const bounds = L.latLngBounds([]);
+      village.khewats.forEach(khewat => {
+        const ks = [];
+        khewat.murabbas.forEach(m => {
+          drawBox(m);
+          if (m.box && m.box.bounds) bounds.extend(m.box.bounds);
+          mappedKhasras(m).forEach(k => {
+            const poly = drawKhasra(m.number, k);
+            bounds.extend(poly.getBounds());
+            ks.push(k);
+          });
+        });
+        owned = addOwned(owned, ownedRaw(ks, khewat.share));
+      });
+      if (bounds.isValid()) {
+        if (isInitial) {
+          // fitBounds only sets a ceiling — bump zoom after a tight fit so first load feels closer.
+          map.fitBounds(bounds, { maxZoom: 19, padding: [0, 0], animate: false });
+          const z = Math.min(Math.max(map.getZoom() + 1, 17), 19);
+          map.flyTo(bounds.getCenter(), z, { duration: 1.0 });
+        } else {
+          map.flyToBounds(bounds, { maxZoom: 17, duration: 1.2, padding: [30, 30] });
+        }
+      }
+      const anyCo = village.khewats.some(k => typeof k.share === 'number' && k.share < 1);
+      updateInfo(village.name, owned, villageOwners(village),
+                 anyCo ? coNote(0) : '');
+      if (isMobile()) closeDrawer();
+    }
+
+    function selectKhewat(khewat, rowEl) {
+      setActiveRow(rowEl);
+      clearLayers();
+      const all = [];
+      const bounds = L.latLngBounds([]);
+      khewat.murabbas.forEach(m => {
+        drawBox(m);
+        if (m.box && m.box.bounds) bounds.extend(m.box.bounds);
+        mappedKhasras(m).forEach(k => {
+          const poly = drawKhasra(m.number, k);
+          bounds.extend(poly.getBounds());
+          all.push(k);
+        });
+      });
+      if (bounds.isValid()) map.flyToBounds(bounds, { maxZoom: 18, duration: 1.2, padding: [30, 30] });
+      updateInfo(khewat.label.split(' (')[0], ownedRaw(all, khewat.share),
+                 khewat.owners, coNote(khewat.share));
+      if (isMobile()) closeDrawer();
+    }
+
+    function selectMurabba(khewat, murabba, rowEl) {
+      setActiveRow(rowEl);
+      clearLayers();
+      drawBox(murabba);
+      const ks = mappedKhasras(murabba);
+      const bounds = L.latLngBounds([]);
+      if (murabba.box && murabba.box.bounds) bounds.extend(murabba.box.bounds);
+      ks.forEach(k => { const p = drawKhasra(murabba.number, k); bounds.extend(p.getBounds()); });
+      if (bounds.isValid()) map.flyToBounds(bounds, { maxZoom: 19, duration: 1.2, padding: [40, 40] });
+      updateInfo('Kw ' + khewat.number + ' \u00b7 Mb ' + murabba.number,
+                 ownedRaw(ks, khewat.share), khewat.owners, coNote(khewat.share));
+      if (isMobile()) closeDrawer();
+    }
+
+    function selectKhasra(khewat, murabba, khasra, rowEl) {
+      setActiveRow(rowEl);
+      clearLayers();
+      drawBox(murabba);
+      const poly = drawKhasra(murabba.number, khasra);
+      map.flyToBounds(poly.getBounds(), { maxZoom: 19, duration: 1.2, padding: [60, 60] });
+      updateInfo('Mb ' + murabba.number + ' \u00b7 ' + khasra.khas_no,
+                 ownedRaw([khasra], khewat.share), khewat.owners, coNote(khewat.share));
+      if (isMobile()) closeDrawer();
+    }
+
+    // ---- Tree builder ----
+    const treeEl = document.getElementById('tree');
+
+    function makeNode({ label, badge, children, onSelect, disabled, expanded, level }) {
+      const li = document.createElement('li');
+      const row = document.createElement('div');
+      row.className = 'row' + (level ? ' level-' + level : '') + (disabled ? ' disabled' : '');
+
+      const caret = document.createElement('span');
+      caret.className = 'caret' + (children && children.length ? '' : ' empty');
+
+      const lbl = document.createElement('span');
+      lbl.className = 'label';
+      lbl.innerHTML = label + (badge ? ' <em>' + badge + '</em>' : '');
+
+      row.appendChild(caret);
+      row.appendChild(lbl);
+      li.appendChild(row);
+
+      let childUl = null;
+      if (children && children.length) {
+        childUl = document.createElement('ul');
+        if (!expanded) childUl.className = 'collapsed';
+        else caret.classList.add('open');
+        children.forEach(c => childUl.appendChild(c));
+        li.appendChild(childUl);
+        caret.textContent = '\u25B6';
+      }
+
+      function toggle() {
+        if (!childUl) return;
+        childUl.classList.toggle('collapsed');
+        caret.classList.toggle('open');
+      }
+
+      caret.addEventListener('click', (e) => { e.stopPropagation(); toggle(); });
+      row.addEventListener('click', () => {
+        if (disabled) return;
+        if (onSelect) onSelect(row);
+        if (childUl && childUl.classList.contains('collapsed')) toggle();
+      });
+
+      return li;
+    }
+
+    function buildKhewatNode(khewat) {
+      const murabbaNodes = khewat.murabbas.map(murabba => {
+        const khasraNodes = murabba.khasras.map(khasra => {
+          const disabled = !khasra.mapped;
+          return makeNode({
+            label: 'Khasra ' + khasra.khas_no,
+            badge: disabled ? 'no GIS polygon' :
+                   (khasra.acres != null ? khasra.acres.toFixed(2) + ' Acres' : ''),
+            disabled,
+            level: 'khasra',
+            onSelect: disabled ? null :
+              (row) => selectKhasra(khewat, murabba, khasra, row)
+          });
+        });
+        const mapped = mappedKhasras(murabba).length;
+        return makeNode({
+          label: 'Murabba ' + murabba.number,
+          badge: mapped + ' khasra' + (mapped === 1 ? '' : 's'),
+          children: khasraNodes,
+          level: 'murabba',
+          onSelect: (row) => selectMurabba(khewat, murabba, row)
+        });
+      });
+      return makeNode({
+        label: khewat.label.split(' (')[0],
+        badge: khewat.label.includes('(') ? khewat.label.split('(')[1].replace(')', '') : '',
+        children: murabbaNodes,
+        level: 'khewat',
+        onSelect: (row) => selectKhewat(khewat, row)
+      });
+    }
+
+    function buildTree() {
+      const villages = data.villages || [];
+      const villageNodes = villages.map(village => {
+        const khewatNodes = village.khewats.map(buildKhewatNode);
+        // Clicking a village highlights all its owned land AND expands it.
+        // Collapsed by default so only District > Tehsil > Villages show.
+        const node = makeNode({
+          label: village.name, badge: 'Village',
+          children: khewatNodes,
+          expanded: false, level: 'village',
+          onSelect: (row) => selectAllOwned(village, row)
+        });
+        node.querySelector('.row').dataset.villageId = village.id;
+        return node;
+      });
+      const tehsilNode = makeNode({
+        label: (data.meta.tehsil || 'Gharaunda'), badge: 'Tehsil',
+        children: villageNodes, expanded: true, level: 'tehsil'
+      });
+      const districtNode = makeNode({
+        label: (data.meta.district || 'Karnal'), badge: 'District',
+        children: [tehsilNode], expanded: true, level: 'district'
+      });
+      treeEl.appendChild(districtNode);
+    }
+
+    function expandTreeRow(row) {
+      const li = row.parentElement;
+      const childUl = li && li.querySelector(':scope > ul');
+      const caret = row.querySelector('.caret');
+      if (childUl && childUl.classList.contains('collapsed')) {
+        childUl.classList.remove('collapsed');
+        if (caret) caret.classList.add('open');
+      }
+    }
+
+    function initDefaultSelection() {
+      const villages = data.villages || [];
+      const raseen = villages.find(v => v.id === 'raseen') || villages[0];
+      if (!raseen) return;
+      const row = treeEl.querySelector('[data-village-id="' + raseen.id + '"]');
+      if (!row) return;
+      selectAllOwned(raseen, row, true);
+      expandTreeRow(row);
+    }
+
+    buildTree();
+
+    // ---- Murabba box visibility toggle ----
+    const boxToggle = document.getElementById('box-toggle');
+    boxToggle.addEventListener('change', () => {
+      if (boxToggle.checked) {
+        if (!map.hasLayer(boxLayer)) boxLayer.addTo(map);
+      } else if (map.hasLayer(boxLayer)) {
+        map.removeLayer(boxLayer);
+      }
+    });
+
+    // ---- Mobile drawer ----
+    const sidebarEl = document.getElementById('sidebar');
+    const scrimEl = document.getElementById('scrim');
+    const menuBtn = document.getElementById('menu-btn');
+    const sidebarClose = document.getElementById('sidebar-close');
+
+    function isMobile() {
+      return window.matchMedia('(max-width: 768px)').matches;
+    }
+    function openDrawer() {
+      sidebarEl.classList.add('open');
+      scrimEl.classList.add('open');
+      menuBtn.classList.add('hidden');
+    }
+    function stopMenuGlow() {
+      menuBtn.classList.remove('menu-glow');
+    }
+    function closeDrawer() {
+      sidebarEl.classList.remove('open');
+      scrimEl.classList.remove('open');
+      menuBtn.classList.remove('hidden');
+      // Leaflet needs a resize nudge after the container area changes back
+      setTimeout(() => map.invalidateSize(), 260);
+    }
+
+    menuBtn.addEventListener('click', () => {
+      stopMenuGlow();
+      openDrawer();
+    });
+    scrimEl.addEventListener('click', closeDrawer);
+    sidebarClose.addEventListener('click', closeDrawer);
+
+    if (isMobile()) {
+      menuBtn.classList.add('menu-glow');
+      setTimeout(stopMenuGlow, 8000);
+    }
+
+    // Run the default Raseen selection now that the drawer helpers exist.
+    initDefaultSelection();
+
+    window.addEventListener('resize', () => map.invalidateSize());
+    window.addEventListener('orientationchange', () => setTimeout(() => map.invalidateSize(), 300));
+  </script>
+</body>
+</html>
