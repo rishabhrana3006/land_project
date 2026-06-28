@@ -120,6 +120,55 @@
 
     #map { flex: 1 1 auto; height: 100%; background: #0b1f33; position: relative; }
 
+    /* Low-key "locate me" button (Leaflet control) */
+    .locate-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 30px;
+      height: 30px;
+      background: rgba(11, 31, 51, 0.72);
+      border: 1px solid rgba(36, 80, 122, 0.55);
+      margin-left: 12px !important;
+      border-radius: 5px;
+      cursor: pointer;
+      color: #cdd9e5;
+      box-shadow: 0 1px 4px rgba(0,0,0,.3);
+      transition: color .15s ease, border-color .15s ease, background .15s ease;
+    }
+    .locate-btn:hover { color: #5ec8ff; border-color: #5ec8ff; background: rgba(11, 31, 51, 0.92); }
+    .locate-btn.active { color: #5ec8ff; border-color: #5ec8ff; }
+    .locate-btn.locating svg { animation: locate-spin 1s linear infinite; }
+    .locate-btn svg { width: 17px; height: 17px; display: block; }
+    @keyframes locate-spin { to { transform: rotate(360deg); } }
+
+    /* Blue "you are here" dot */
+    .user-dot {
+      position: relative;
+      width: 16px;
+      height: 16px;
+      background: #2a8fff;
+      border: 2px solid #fff;
+      border-radius: 50%;
+      box-shadow: 0 0 0 2px rgba(42, 143, 255, 0.4), 0 0 6px rgba(0,0,0,.4);
+    }
+    .user-dot::after {
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background: rgba(42, 143, 255, 0.35);
+      transform: translate(-50%, -50%);
+      animation: user-pulse 2s ease-out infinite;
+    }
+    @keyframes user-pulse {
+      0%   { transform: translate(-50%, -50%) scale(1);   opacity: .7; }
+      100% { transform: translate(-50%, -50%) scale(3.2); opacity: 0; }
+    }
+
     /* Map labels */
     .khasra-label {
       background: transparent; border: none; box-shadow: none;
@@ -759,6 +808,70 @@
         map.removeLayer(boxLayer);
       }
     });
+
+    // ---- Geolocation ("locate me") ----
+    // Low-key control: does nothing until clicked, then drops a blue dot at the
+    // user's position and pans there. Re-clicking re-centers.
+    let userMarker = null;
+
+    const LocateControl = L.Control.extend({
+      options: { position: 'topleft' },
+      onAdd: function () {
+        const btn = L.DomUtil.create('div', 'locate-btn');
+        btn.title = 'Show my location';
+        btn.setAttribute('aria-label', 'Show my location');
+        btn.innerHTML =
+          '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" ' +
+          'stroke-linecap="round" stroke-linejoin="round">' +
+          '<circle cx="12" cy="12" r="3.5"/>' +
+          '<path d="M12 2v3M12 19v3M2 12h3M19 12h3"/></svg>';
+        L.DomEvent.disableClickPropagation(btn);
+        L.DomEvent.on(btn, 'click', () => locateUser(btn));
+        this._btn = btn;
+        return btn;
+      }
+    });
+    map.addControl(new LocateControl());
+
+    function locateUser(btn) {
+      if (!('geolocation' in navigator)) {
+        alert('Geolocation is not supported by this browser.');
+        return;
+      }
+      btn.classList.add('locating');
+      navigator.geolocation.getCurrentPosition(
+        (pos) => {
+          btn.classList.remove('locating');
+          btn.classList.add('active');
+          const latlng = [pos.coords.latitude, pos.coords.longitude];
+          const acc = pos.coords.accuracy;
+          if (!userMarker) {
+            const icon = L.divIcon({
+              className: '',
+              html: '<div class="user-dot"></div>',
+              iconSize: [16, 16],
+              iconAnchor: [8, 8]
+            });
+            userMarker = L.marker(latlng, { icon, interactive: false, keyboard: false, zIndexOffset: 1000 }).addTo(map);
+          } else {
+            userMarker.setLatLng(latlng);
+          }
+          userMarker.bindTooltip(
+            'You are here' + (acc ? ' (\u00b1' + Math.round(acc) + ' m)' : ''),
+            { direction: 'top', offset: [0, -8] }
+          );
+          map.flyTo(latlng, Math.max(map.getZoom(), 17), { duration: 1.2 });
+        },
+        (err) => {
+          btn.classList.remove('locating');
+          const msg = err.code === err.PERMISSION_DENIED
+            ? 'Location permission denied. Enable it in your browser settings to use this.'
+            : 'Could not get your location. Please try again.';
+          alert(msg);
+        },
+        { enableHighAccuracy: true, timeout: 10000, maximumAge: 30000 }
+      );
+    }
 
     // ---- Mobile drawer ----
     const sidebarEl = document.getElementById('sidebar');
