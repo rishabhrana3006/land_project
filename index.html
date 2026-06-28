@@ -300,12 +300,14 @@
       .caret { width: 16px; flex-basis: 16px; font-size: 11px; }
       #box-toggle-wrap { font-size: 13px; padding: 10px 12px; }
 
-      /* Info panel becomes a bottom bar */
+      /* Info panel — top-right on mobile (menu is top-left) */
       #infobox {
-        left: 10px;
-        right: 10px;
-        bottom: 10px;
-        width: auto;
+        left: auto;
+        right: 14px;
+        top: 14px;
+        bottom: auto;
+        width: min(210px, calc(100vw - 88px));
+        max-width: 210px;
         padding: 9px 11px;
       }
 
